@@ -1,7 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');  /* font-family: 'Pacifico', cursive; */
-@import url('https://fonts.googleapis.com/css2?family=Mina:wght@400;700&display=swap');/* font-family: 'Mina', sans-serif; */
 
 
+:root{
+    --colorPrincipal:#FEC84B ; 
+    --colorSecundario:#C11574;
+    --colorTerciario:#FDB022;
+    --fuentePrincipal :font-family: 'Mina', sans-serif; 
+    --fuenteSecundaria:font-family: 'Pacifico', cursive; 
+    
+
+}
 
 *{
     margin: 0;
@@ -15,7 +22,7 @@ body{
 }
 /* HEADER */
 .headerTop{
-    background-color: #FEC84B;
+    background-color:var(--colorPrincipal);
     width: 100%;
     height: 52px;
 }
@@ -39,18 +46,18 @@ body{
     font-family: Pacifico;
     font-size: 2rem;
     line-height: 63px;
-    color: #C11574;
+    color: var(--colorSecundario);
     margin-left: 4vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
     text-decoration: none;
 }
 .tituloArtPetit:hover{
-    color: #C11574
+    color: var(--colorSecundario);
 }
 
 .contenedorNavs{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -61,7 +68,7 @@ body{
 }
 
 .nav-link:hover{
-    color: #FEC84B !important;
+    color: var(--colorPrincipal) !important;
 }
 
 /* FIN HEADER */
@@ -72,7 +79,7 @@ body{
 .titulosCarrousel{
     background-color: rgba(0, 0, 0, 0.541);
     color: white;
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     padding: 10px;
 }
 
@@ -80,12 +87,12 @@ body{
     width: 100%;
 }
 .textoInformacion{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-size: 1rem;
     font-weight: 700;
 }
 .textoFAQS{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
     font-size: 1rem;
     color: #5C5959;
@@ -98,25 +105,24 @@ body{
 /* FOOTER */
 
 .footer{
-    background-color: #FEC84B;
+    background-color: var(--colorPrincipal);
     height: 213px;
     width: 100%;
     font-size: 1rem;
 }
 .textoRedes{
-    font-family: 'Mina', sans-serif;
+    font-family:var(--fuentePrincipal);
     font-size: 1.5rem;
     margin: 15px;
 }
 .textoUbicacion{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-size: 1.5rem;
 }
 
 @media (max-width: 600px){
-
     .textoUbicacion{
-        font-family: 'Mina', sans-serif;
+        font-family: var(--fuentePrincipal);
         font-size: 1rem;
     }
 }
@@ -141,7 +147,7 @@ body{
 /* PAGINA TRABAJOS PERSONALIZADOS */
 
 .contenedorFormulario{
-    background-color: #FDB022;
+    background-color:var(--colorTerciario);
     width: 75vw;
     padding: 5vw;
     border-radius: 30px;
@@ -149,7 +155,7 @@ body{
 
 
 .textoLabel{
-    font-family: "Mina", sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
     font-size: 1.5rem;
     color: white;
@@ -163,8 +169,8 @@ background: #FFFFFF;
 border: 3px solid #C11574;
 border-radius: 10px;
 text-transform: uppercase;
-color: #FDB022;
-font-family: "Mina", sans-serif;
+color: var(--colorTerciario);
+font-family: var(--fuentePrincipal);
 font-weight: 700;
 font-size: 1.5rem;
 }
@@ -198,12 +204,12 @@ font-size: 1.5rem;
 }
 
 .tituloQuienesSomos{
-    font-family: 'Pacifico', cursive;
-    color: #C11574;
+    font-family: var(--fuenteSecundaria);
+    color: var(--colorSecundario);
 }
 
 .textoQuienesSomos{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-size: 1.2rem
 }
 
@@ -213,9 +219,9 @@ font-size: 1.5rem;
 
 
 .titulosLuces{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
-    color: #FDB022;
+    color: var(--colorTerciario);
     margin-top: 5vh;
 }
 
@@ -231,16 +237,16 @@ font-size: 1.5rem;
 }
 
 .cartasComoComprar{
-    background-color: #C11574;
+    background-color:var(--colorSecundario);
     color: white;
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
 }
 
 .tituloComoComprar{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
     text-transform: uppercase;
-    color: #C11574;
+    color: var(--colorSecundario);
 }
 
 
@@ -252,19 +258,19 @@ font-size: 1.5rem;
 }
 
 .titPrincipalPreguntasFrecuentes{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
-    color: #C11574;
+    color: var(--colorSecundario);
     margin: 60px;
 }
 
 .titulosPreguntasFrecuentes{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
 }
 
 .textoPreguntasFrecuentes{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 400;
 }
 
@@ -290,7 +296,7 @@ font-size: 1.5rem;
 }
 
 .tituloIdeasBalcon{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
 }
 
@@ -298,7 +304,7 @@ font-size: 1.5rem;
 /* PAGINA TERMINOS Y CONDICIONES  */
 
 .tituloTerminosyCondiciones{
-    font-family: 'Mina', sans-serif;
+    font-family: var(--fuentePrincipal);
     font-weight: 700;
-    color: #C11574;
+    color: var(--colorSecundario);
 }
