@@ -7,7 +7,6 @@
     --fuentePrincipal :font-family: 'Mina', sans-serif; 
     --fuenteSecundaria:font-family: 'Pacifico', cursive; 
     
-
 }
 
 *{
@@ -43,8 +42,8 @@ body{
 }
 
 .tituloArtPetit{
-    font-family: Pacifico;
-    font-size: 2rem;
+    font-family: 'Pacifico', cursive;
+    font-size: 2.1rem;
     line-height: 63px;
     color: var(--colorSecundario);
     margin-left: 4vw;
@@ -204,19 +203,17 @@ font-size: 1.5rem;
 }
 
 .tituloQuienesSomos{
-    font-family: var(--fuenteSecundaria);
+    font-family: pacifico;
     color: var(--colorSecundario);
 }
 
 .textoQuienesSomos{
-    font-family: var(--fuentePrincipal);
-    font-size: 1.2rem
+    font-family:'Mina';
+    font-size: 1.8rem;
+    font-weight: 400;
 }
 
-
-
 /* PAGINA LUCES: INTERIOR // EXTERIOR // OFERTAS */
-
 
 .titulosLuces{
     font-family: var(--fuentePrincipal);
