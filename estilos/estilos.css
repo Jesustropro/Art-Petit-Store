@@ -189,11 +189,37 @@ font-size: 1.5rem;
         font-size: 1rem;
         }
 }
+ 
 
-
-
-
-
+.errorDatos{
+    border: 3.5px solid  rgb(252, 103, 103) !important;
+}
+ .datosCorrectos {
+    border: 3.5px solid  rgb(146, 223, 95) !important;
+    opacity: 1;
+}
+/* icono del fomulario */
+.formularioInput{
+    position: relative;
+}
+.formularioEstado{
+position: absolute;
+right: 10px;
+top: 3px;
+z-index: 100;
+font-size: 26px;
+opacity: 0;
+}
+.formularioEstadoActivo{
+    display: block;
+    opacity: 1;
+}
+.formularioEstadoCorreto{
+    color:rgb(146, 223, 95) ;
+}
+.formularioEstadoIncorrecto{
+    color: rgb(216, 65, 38);
+}
 /* PAGINA QUIENES SOMOS */
 
 .contenedorQuienesSomos{
