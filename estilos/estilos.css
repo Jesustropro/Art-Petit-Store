@@ -202,7 +202,8 @@ font-size: 1.5rem;
 .formularioInput{
     position: relative;
 }
-.formularioEstado{
+.formularioEstado , 
+.formularioEstadoEmail{
 position: absolute;
 right: 10px;
 top: 3px;
