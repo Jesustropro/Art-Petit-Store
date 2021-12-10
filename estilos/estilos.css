@@ -173,6 +173,11 @@ font-family: var(--fuentePrincipal);
 font-weight: 700;
 font-size: 1.5rem;
 }
+.botonSubmit:hover{
+    background-color: #FDB022;
+    color: #ffffff;
+    transition-duration: .8s;
+}
 
 @media (max-width: 600px){
     .botonSubmit{
