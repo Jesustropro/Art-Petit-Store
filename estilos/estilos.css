@@ -129,12 +129,35 @@ body{
 
 /* FIN FOOTER */
 
-
-
-
-
-
 /* PAGINA COMPRAR ARTE */
+.producDatos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.producImg{
+padding: 5rem;
+}
+.producDescrip{
+    margin-top: 5rem;
+  font-family: 'Mina', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 150px;
+  margin-right: 9rem;
+}
+.btnComprar{
+    width: 10rem;
+    height: 3.5rem;
+    background: #FFFFFF;
+    border: 2px solid #C11574;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--colorTerciario);
+    font-family: var(--fuentePrincipal);
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 5rem;
+}
 
 .card-body{
     font-family: 'Mina', sans-serif;
@@ -253,10 +276,6 @@ opacity: 0;
     color: var(--colorTerciario);
     margin-top: 5vh;
 }
-
-
-
-
 /* PAGINA ¿COMO COMPRAR? */
 
 

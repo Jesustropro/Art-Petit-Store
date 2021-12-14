@@ -13,10 +13,11 @@ obtenerImg.forEach((imagen) => {
 // recibe todos los id por paramentro
 async function mostrarImagen(id) {
     const datosLeidos = await traerDatos();
-    // filtro por id
-    const res = datosLeidos.filter((x) => x.id === id);
+    let res = datosLeidos.filter(obj=> obj.id === id)
+    console.log(res.id);
     res.forEach((e) => {
-        
+        // una vez que filtro  guardo el resultado en el Session Storage
+        sessionStorage.setItem('cuadro',JSON.stringify(e))
         pintarCuadro(e);
     });
 }
@@ -31,30 +32,4 @@ async function traerDatos() {
     }
 }
 traerDatos();
-function pintarCuadro(e) {
-    //creo los elementos
-    const divDatos = document.createElement('div') // div que contiene todo
-    const divImagen = document.createElement('div')
-    const divinfo = document.createElement('div')
-    const img = document.createElement('img')
-    const codigo = document.createElement('h5')
-    const descrip = document.createElement('p')
-    // seteo sus valores 
-    img.src = e.img
-    codigo.textContent = `00${e.id}`
-    descrip.textContent = e.descripcion
-    divImagen.appendChild(img)
-    divinfo.appendChild(codigo)
-    divinfo.appendChild(descrip)
-    divDatos.appendChild(divImagen)
-    divDatos.appendChild(divinfo)
-    sessionStorage.setItem('cuadro',JSON.stringify(e))
-    
 
-}
-function obtenerDatos(){
-
-    sessionStorage.getItem('cuadro')
-    console.log(  JSON.parse(sessionStorage.getItem('cuadro')));
-}
-obtenerDatos()
