@@ -6,6 +6,9 @@ const iconoFormEmail = document.querySelector("#emailUser");
 const estadoFormulario = document.querySelector(".formularioEstado");
 const estadoFormularioEmail = document.querySelector(".formularioEstadoEmail");
 const exprReguEMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+const btnSubmit = document.querySelector('.botonSubmit')
+
+
 
 
 
@@ -30,14 +33,17 @@ inputsFormulario.forEach((input) => {
 
 const validarDatosNombre = (e) => {
   if (e.target.value.length < 3 || e.target.value.length > 25) {
+    btnformulario(e)
     e.target.classList.add("errorDatos");
     e.target.classList.remove("datosCorrectos");
     estadoFormulario.classList.add('formularioEstadoActivo')
     iconoForm.classList.remove('formularioEstadoCorrecto')
     iconoForm.classList.add('formularioEstadoIncorrecto')
     document.querySelector('#iconoError ').classList.add('fa-times')
+    
   } else {
     // caso contrario elimina la clase errorDatos y setea clase datosCorrectos
+    btnformulario(e)
     e.target.classList.remove("errorDatos");
     e.target.classList.add("datosCorrectos");
     estadoFormulario.classList.add('formularioEstadoActivo')
@@ -69,4 +75,25 @@ const validarDatosEmail = (e) => {
 
 }
 
+const btnformulario = e=>{
 
+if(e.target.classList[2]==='errorDatos'){
+  cancelarEnvio()
+  console.log("no se puede enviar");
+  btnSubmit.classList.add('--incompleto')
+}else{
+  btnSubmit.classList.remove('--incompleto')
+  enviarFormulario()
+  console.log("enviando ");
+}
+}
+// enviar o no el formulario 
+ const enviarFormulario = ()=>{
+   btnSubmit.addEventListener('click',confirmarEnvio)
+ }
+const confirmarEnvio =()=>{
+  location.href='formularioEnviado.html'
+}
+const cancelarEnvio = ()=>{
+btnSubmit.removeEventListener('click',confirmarEnvio)
+}
