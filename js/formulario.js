@@ -55,6 +55,7 @@ const validarDatosNombre = (e) => {
 }
 const validarDatosEmail = (e) => {
   if (exprReguEMail.test(e.target.value) === false) {
+    btnformulario(e)
     e.target.classList.add("errorDatos");
     e.target.classList.remove("datosCorrectos");
     estadoFormularioEmail.classList.add('formularioEstadoActivo')
@@ -63,6 +64,7 @@ const validarDatosEmail = (e) => {
     document.querySelector('#iconoErrorEmail').classList.add('fa-times')
     document.querySelector('#iconoErrorEmail').classList.remove('fa-check')
   } else {
+    btnformulario(e)
     // caso contrario elimina la clase errorDatos y setea clase datosCorrectos
     e.target.classList.remove("errorDatos");
     e.target.classList.add("datosCorrectos");
@@ -76,24 +78,23 @@ const validarDatosEmail = (e) => {
 }
 
 const btnformulario = e=>{
-
 if(e.target.classList[2]==='errorDatos'){
-  cancelarEnvio()
-  console.log("no se puede enviar");
   btnSubmit.classList.add('--incompleto')
+  document.querySelector(".botonSubmit").disabled = true;
 }else{
   btnSubmit.classList.remove('--incompleto')
+  document.querySelector(".botonSubmit").disabled = false;
   enviarFormulario()
-  console.log("enviando ");
+
 }
 }
 // enviar o no el formulario 
  const enviarFormulario = ()=>{
-   btnSubmit.addEventListener('click',confirmarEnvio)
+   btnSubmit.addEventListener('click',e=>{
+     console.log("click wachen");
+     e.preventDefault()
+    location.href='formularioEnviado.html'
+   })
+  
  }
-const confirmarEnvio =()=>{
-  location.href='formularioEnviado.html'
-}
-const cancelarEnvio = ()=>{
-btnSubmit.removeEventListener('click',confirmarEnvio)
-}
+
