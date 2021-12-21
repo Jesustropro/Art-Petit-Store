@@ -75,12 +75,12 @@
 
   <main>
     <div class="m-5 mx-auto contenedorFormulario">
-      <form action="" class="col-auto ">
+      <form id="form" class="col-auto ">
         <div class="form mb-3  ">
           <label for="floatingName" class="textoLabel">Nombre</label>
           <div class="formulario">
             <div class="formularioInput">
-              <input type="text" class="form-control formularioInput " id="floatingName"
+              <input id="nombre" type="text" class="form-control formularioInput " id="floatingName"
                 placeholder="Ingrese su nombre " name="nombre" />
               <div id="nombreUser" class="formularioEstado">
                 <i id="iconoError" class=" fas fa-times"></i>
@@ -97,7 +97,7 @@
           <label for="floatingInput" class="textoLabel">Email</label>
           <div class="formulario">
             <div class="formularioInput">
-              <input type="email" class="form-control formularioInput  " id="floatingName"
+              <input id="email" type="email" class="form-control formularioInput  " id="floatingName"
                 placeholder="Ingrese su email" name="email" />
               <div id="emailUser" class="formularioEstadoEmail">
                 <i id="iconoErrorEmail" class=" fas fa-times"></i>
@@ -112,10 +112,11 @@
 
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="textoLabel" class="form-label">Ingrese aqui su pedido</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="mensaje"></textarea>
         </div>
-        <input type="submit" class="botonSubmit"/>
+        <input type="submit" id="button" class="botonSubmit" value="Enviar" >
       </form>
+    
     </div>
   </main>
   <!-- footer -->
@@ -142,5 +143,10 @@
   </footer>
 </body>
 <script src="js/formulario.js"></script>
-
+<script src="js/enviarFormulario.js"></script>
+  <!-- scripts del la libreria emailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    emailjs.init('user_jKPDOIAED2JRFFEQR48kv')
+  </script>
 </html>

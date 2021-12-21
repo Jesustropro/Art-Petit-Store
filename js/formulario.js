@@ -8,10 +8,6 @@ const estadoFormularioEmail = document.querySelector(".formularioEstadoEmail");
 const exprReguEMail = /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
 const btnSubmit = document.querySelector('.botonSubmit')
 
-
-
-
-
 const validarFormulario = (e) => {
   switch (e.target.name) {
     case "nombre":
@@ -20,7 +16,7 @@ const validarFormulario = (e) => {
 
       break;
     case "email":
-      // si es un email no pasa el test entonces marcalo como no valido , caso contrario marcalo como valido 
+      // si el  email no pasa el test entonces marcalo como no valido , caso contrario marcalo como valido 
       validarDatosEmail(e)
       break;
   }
@@ -32,7 +28,7 @@ inputsFormulario.forEach((input) => {
 
 
 const validarDatosNombre = (e) => {
-  if (e.target.value.length < 3 || e.target.value.length > 25) {
+  if (e.target.value.length <=3 || e.target.value.length > 25) {
     btnformulario(e)
     e.target.classList.add("errorDatos");
     e.target.classList.remove("datosCorrectos");
@@ -84,17 +80,8 @@ if(e.target.classList[2]==='errorDatos'){
 }else{
   btnSubmit.classList.remove('--incompleto')
   document.querySelector(".botonSubmit").disabled = false;
-  enviarFormulario()
-
-}
-}
-// enviar o no el formulario 
- const enviarFormulario = ()=>{
-   btnSubmit.addEventListener('click',e=>{
-     console.log("click wachen");
-     e.preventDefault()
-    location.href='formularioEnviado.html'
-   })
   
- }
+}
+}
+
 
