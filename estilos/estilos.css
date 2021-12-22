@@ -26,15 +26,21 @@ body{
     height: 52px;
 }
 
+.textHeader{
+    display: flex;
+    justify-content: end;
+    margin-top: -1.5rem;
+  
+}
 .a-Header{
     margin-right: 5vw;
     line-height: 52px;
     text-decoration: none;
     font-family: 'Pacifico', cursive;
-    font-size: 1rem;
     color: #ffffff;
     padding-left: 15px;
     border-left: 3px solid white;
+    text-align: center;
 }
  
 .a-Header:hover{
@@ -64,16 +70,54 @@ body{
     justify-content: center;
 }
 @media (max-width:768px) {
+
     .contenido{
+        position: relative;
         display: flex;
         flex-direction: row;
-       
+        padding: 0 auto;
+        margin: none;
+        overflow-x: hidden; 
+        z-index: 0;
     }
     .contenedorNavs{
+        position: absolute;
+        margin: none;
+        width: 12rem;
+        height: 100%;
         background-color: #FDB022;
-        display: none !important;
+       left: -12rem;
+        transition: all 250ms linear;
+        z-index: 3;
     }
-   
+    .contenedorNavs  li {
+        list-style:none;
+    }
+    .contenedorNavs.active{
+        left: 0rem;
+      
+
+    }
+    
+    .contenedorNavs a {
+        color: #fff !important;
+        text-align: center;
+        margin: 2rem;
+    }
+   .sidebar{
+       padding: 1rem;
+       font-size: 1.5rem;
+       color :#fff;
+       align-items: flex-start;
+   }
+  
+   .contenedor-main{
+       margin: 1.5rem;
+   }
+   .textHeader{
+    margin-top: -3.5rem;
+  
+}
 }
 .nav-link{
     color: black !important;
