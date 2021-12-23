@@ -73,8 +73,6 @@ body{
 
     .contenido{
         position: relative;
-        display: flex;
-        flex-direction: row;
         padding: 0 auto;
         margin: none;
         overflow-x: hidden; 
@@ -83,6 +81,7 @@ body{
     .contenedorNavs{
         position: absolute;
         margin: none;
+       
         width: 12rem;
         height: 100%;
         background-color: #FDB022;
@@ -90,20 +89,22 @@ body{
         transition: all 250ms linear;
         z-index: 3;
     }
-    .contenedorNavs  li {
-        list-style:none;
-    }
+   
     .contenedorNavs.active{
         left: 0rem;
       
 
     }
-    
-    .contenedorNavs a {
-        color: #fff !important;
+   
+    .contenedorNavs ul li   {
+        list-style:none;
+        color: #FFFFFF!important;
         text-align: center;
         margin: 2rem;
+        
     }
+   
+    
    .sidebar{
        padding: 1rem;
        font-size: 1.5rem;
@@ -111,21 +112,29 @@ body{
        align-items: flex-start;
    }
   
-   .contenedor-main{
-       margin: 1.5rem;
-   }
    .textHeader{
     margin-top: -3.5rem;
   
 }
-}
-.nav-link{
-    color: black !important;
+
 }
 
-.nav-link:hover{
-    color: var(--colorPrincipal) !important;
+.nav-link{
+    color:#fff!important;
+    width: 100%;
+     
 }
+.dropdown-menu.show{
+    background-color: #FEC84B;
+    font-family: 'Mina';
+    text-transform:uppercase ;
+    font-weight: 100;
+}
+
+.nav-link:active{
+    color: #C11574 !important;
+}
+
 
 /* FIN HEADER */
 
@@ -233,7 +242,54 @@ padding: 5rem;
 .card-body{
     font-family: 'Mina', sans-serif;
 }
-
+/* media query para la version mobile de comprar luces o dibujos */
+@media (max-width:768px) {
+    /* ajustar la pantalla  */
+    html, body {
+        min-height: 100%;
+        min-width: 100%;
+    }
+    .tituloArtPetit{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .contenedorImg{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        align-items: center;
+        margin-top: -2rem;
+        
+    }
+    .floatWpp{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: .3rem;
+        top: 24rem;
+        margin-bottom:2rem ;
+        background-color: #00bb2d;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        
+    }
+    
+    .floatWpp:hover{
+        text-decoration: none;
+        color: #00bb2d;
+        background-color: #ffffff;
+    }
+    .iconWpp i{
+        margin-top: -2rem;
+    }
+   
+}
 
 
 
@@ -241,6 +297,63 @@ padding: 5rem;
 
 
 /* estilos que se muestra si el formulario se envio  */
+@media (max-width:768px) {
+     /* ajustar la pantalla  */
+   
+    .headerTop{
+        justify-content: center;
+
+    }
+    .tituloArtPetit{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .contenedorFormulario{
+        display: flex;
+        flex-direction: row;
+        margin-left: 22px;
+        margin-bottom: 40px;
+        justify-content: center;
+        align-items: center;
+        background-color:#FDB022;
+        padding: 2rem;
+        border-radius: 10px;
+ 
+    }
+    .botonSubmit{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (min-width:768px) {
+    .textHeader{
+        margin-left: 50rem;
+        margin-top: .1rem;
+    }
+    .headerTop{
+        display: flex;
+        justify-content: center;
+        overflow: auto;
+    }
+    .tituloArtPetit{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .contenedorFormulario{
+        margin: 0 auto;
+        width: 100%;
+        background-color:#FDB022;
+        border-radius: 2%;
+        padding: 1rem;
+        margin-bottom: 5rem;
+    }
+    .botonSubmit{
+        display: flex;
+        justify-content: center;
+    }
+}
 .FormularioEnviado{
     text-align: center;
 }
@@ -264,11 +377,16 @@ padding: 5rem;
     font-weight: 100;
    
 }
-.contenedorFormulario{
-    background-color:var(--colorTerciario);
-    width: 75vw;
-    padding: 5vw;
-    border-radius: 30px;
+@media (min-width:768px) {
+    .contenedorFormulario{
+        margin: 0 auto;
+        width: 80%;
+        background-color:var(--colorTerciario);
+        border-radius: 2%;
+        padding: 1rem;
+        margin-bottom: 5rem;
+    }
+    
 }
 
 
@@ -283,6 +401,7 @@ padding: 5rem;
 .botonSubmit{
 padding: 2vh 8vw;
 width: 25vw;
+margin: 0 19rem;
 background: #FFFFFF;
 border: 3px solid #C11574;
 border-radius: 10px;
@@ -291,7 +410,7 @@ color: var(--colorTerciario);
 font-family: var(--fuentePrincipal);
 font-weight: 700;
 font-size: 1.5rem;
-margin-left: 235px ;
+
 }
 .botonSubmit:hover{
     background-color: #FDB022;
@@ -326,6 +445,7 @@ margin-left: 235px ;
 /* icono del fomulario */
 .formularioInput{
     position: relative;
+    
 }
 .formularioEstado , 
 .formularioEstadoEmail{
@@ -384,6 +504,104 @@ opacity: 0;
     color: var(--colorTerciario);
     margin-top: 5vh;
 }
+/* media query para las luces */
+@media (max-width:768px) {
+    /* ajustar la pantalla  */
+    html, body {
+        min-height: 100%;
+        min-width: 100%;
+    }
+    .tituloArtPetit{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .contendorLucesInterior{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1.5rem;
+        align-items: center;
+        margin: 1rem;
+        
+    }
+    .floatWpp{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: .3rem;
+        top: 24rem;
+        margin-bottom:2rem ;
+        background-color: #00bb2d;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        
+    }
+    
+    .floatWpp:hover{
+        text-decoration: none;
+        color: #00bb2d;
+        background-color: #ffffff;
+    }
+    .iconWpp i{
+        margin-top: -2rem;
+    }
+   
+}
+/* media query para luces de exterior */
+@media (max-width:768px) {
+    /* ajustar la pantalla  */
+     body {
+        min-height: 100%;
+        min-width: 100%;
+        
+    }
+    .tituloArtPetit{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    .contenedorLucesExterior{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 1rem;
+        align-items: center;
+        margin: 1.5rem;
+        
+        
+    }
+    .floatWpp{
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: .3rem;
+        top: 24rem;
+        margin-bottom:2rem ;
+        background-color: #00bb2d;
+        color: #ffffff;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 2.5rem;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+        
+    }
+    
+    .floatWpp:hover{
+        text-decoration: none;
+        color: #00bb2d;
+        background-color: #ffffff;
+    }
+    .iconWpp i{
+        margin-top: -2rem;
+    }
+   
+}
 /* PAGINA ¿COMO COMPRAR? */
 
 
@@ -433,28 +651,30 @@ opacity: 0;
 
 
 /* PAGINA IDEAS */
-
-.contenedorIdeas{
-    display: flex;
-    overflow-x: auto;
-    border: 1px solid white;
-    max-height: 300px;
+@media (max-width:768px) {
+    .contenedorIdeas{
+        overflow-x: auto;
+        border: 1px solid white;
+        max-height: 300px;
+        display: flex;
+    }
+    
+    .contenedorIdeas::-webkit-scrollbar{
+        width: 1rem;
+    }
+    
+    .imgIdeas{
+        max-width: 600px;
+        height: 300px;
+        margin-right: 20px;
+    }
+    
+    .tituloIdeasBalcon{
+        font-family: var(--fuentePrincipal);
+        font-weight: 700;
+    }
 }
 
-.contenedorIdeas::-webkit-scrollbar{
-    width: 0;
-}
-
-.imgIdeas{
-    max-width: 600px;
-    height: 300px;
-    margin-right: 20px;
-}
-
-.tituloIdeasBalcon{
-    font-family: var(--fuentePrincipal);
-    font-weight: 700;
-}
 
 
 /* PAGINA TERMINOS Y CONDICIONES  */
@@ -462,5 +682,11 @@ opacity: 0;
 .tituloTerminosyCondiciones{
     font-family: var(--fuentePrincipal);
     font-weight: 700;
+    color: var(--colorSecundario);
+}
+/* PAGINA DE NUESTRO BLOG */
+.subtituloBlog{
+    text-align: center;
+    font-family:'Pacifico', cursive;
     color: var(--colorSecundario);
 }
