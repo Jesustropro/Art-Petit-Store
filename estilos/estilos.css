@@ -1,39 +1,38 @@
+:root {
+    --colorPrincipal: #FEC84B;
+    --colorSecundario: #C11574;
+    --colorTerciario: #FDB022;
+    --fuentePrincipal: font-family: 'Mina', sans-serif;
+    --fuenteSecundaria: font-family: 'Pacifico', cursive;
 
-
-:root{
-    --colorPrincipal:#FEC84B ; 
-    --colorSecundario:#C11574;
-    --colorTerciario:#FDB022;
-    --fuentePrincipal :font-family: 'Mina', sans-serif; 
-    --fuenteSecundaria:font-family: 'Pacifico', cursive; 
-    
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #E5E5E5;
     width: 100%;
 }
 
 /* HEADER */
-.headerTop{
-    background-color:var(--colorPrincipal);
+.headerTop {
+    background-color: var(--colorPrincipal);
     width: 100%;
     height: 50px;
 }
 
-.textHeader{
+.textHeader {
     display: flex;
     justify-content: end;
     margin-top: -1.5rem;
-  
+
 }
-.a-Header{
+
+.a-Header {
     margin-right: 5vw;
     line-height: 52px;
     text-decoration: none;
@@ -43,12 +42,12 @@ body{
     border-left: 3px solid white;
     text-align: center;
 }
- 
-.a-Header:hover{
+
+.a-Header:hover {
     color: black;
 }
 
-.tituloArtPetit{
+.tituloArtPetit {
     font-family: 'Pacifico', cursive;
     font-size: 2.1rem;
     line-height: 63px;
@@ -58,11 +57,12 @@ body{
     margin-bottom: 5vh;
     text-decoration: none;
 }
-.tituloArtPetit:hover{
+
+.tituloArtPetit:hover {
     color: var(--colorSecundario);
 }
 
-.contenedorNavs{
+.contenedorNavs {
     font-family: var(--fuentePrincipal);
     font-size: 1rem;
     font-weight: 700;
@@ -70,69 +70,72 @@ body{
     display: flex;
     justify-content: center;
 }
+
 @media (max-width:768px) {
 
-    .contenido{
+    .contenido {
         position: relative;
         padding: 0 auto;
         margin: none;
-        overflow-x: hidden; 
+        overflow-x: hidden;
         z-index: 0;
     }
-    .contenedorNavs{
+
+    .contenedorNavs {
         position: absolute;
         margin: none;
-       
+
         width: 12rem;
         height: 100%;
         background-color: #FDB022;
-       left: -12rem;
+        left: -12rem;
         transition: all 250ms linear;
         z-index: 3;
     }
-   
-    .contenedorNavs.active{
+
+    .contenedorNavs.active {
         left: 0rem;
-      
+
 
     }
-   
-    .contenedorNavs ul li   {
-        list-style:none;
-        color: #FFFFFF!important;
+
+    .contenedorNavs ul li {
+        list-style: none;
+        color: #FFFFFF !important;
         text-align: center;
         margin: 2rem;
-        
+
     }
-   
-    
-   .sidebar{
-       padding: 1rem;
-       font-size: 1.5rem;
-       color :#fff;
-       align-items: flex-start;
-   }
-  
-   .textHeader{
-    margin-top: -3.5rem;
-  
-}
+
+
+    .sidebar {
+        padding: 1rem;
+        font-size: 1.5rem;
+        color: #fff;
+        align-items: flex-start;
+    }
+
+    .textHeader {
+        margin-top: -3.5rem;
+
+    }
 
 }
 
-.nav-link{
-    color:#fff!important;
+.nav-link {
+    color: #fff !important;
     width: 100%;
-     
+
 }
-.dropdown-menu.show{
+
+.dropdown-menu.show {
     background-color: #FEC84B;
     font-family: 'Mina';
-    text-transform:uppercase ;
+    text-transform: uppercase;
     font-weight: 100;
 }
 
-.nav-link:active{
+.nav-link:active {
     color: #C11574 !important;
 }
 
@@ -142,7 +145,7 @@ body{
 
 /* HOME */
 
-.carousel-caption h5{
+.carousel-caption h5 {
     position: relative;
     text-transform: uppercase;
     color: rgb(0, 0, 0);
@@ -153,7 +156,8 @@ body{
     font-weight: bold;
     display: block;
 }
-.carousel-caption span{
+
+.carousel-caption span {
     position: relative;
     bottom: 200px;
     color: #000;
@@ -163,15 +167,17 @@ body{
 
 }
 
-.contenedorInfo{
+.contenedorInfo {
     width: 100%;
 }
-.textoInformacion{
+
+.textoInformacion {
     font-family: var(--fuentePrincipal);
     font-size: 1rem;
     font-weight: 700;
 }
-.textoFAQS{
+
+.textoFAQS {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     font-size: 1rem;
@@ -184,24 +190,26 @@ body{
 
 /* FOOTER */
 
-.footer{
+.footer {
     background-color: var(--colorPrincipal);
     height: 100%;
     width: 100%;
     font-size: 1rem;
 }
-.textoRedes{
-    font-family:var(--fuentePrincipal);
+
+.textoRedes {
+    font-family: var(--fuentePrincipal);
     font-size: 1.5rem;
     margin: 15px;
 }
-.textoUbicacion{
+
+.textoUbicacion {
     font-family: var(--fuentePrincipal);
     font-size: 1.5rem;
 }
 
-@media (max-width: 600px){
-    .textoUbicacion{
+@media (max-width: 600px) {
+    .textoUbicacion {
         font-family: var(--fuentePrincipal);
         font-size: 1rem;
     }
@@ -211,22 +219,25 @@ body{
 /* FIN FOOTER */
 
 /* PAGINA COMPRAR ARTE */
-.producDatos{
+.producDatos {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
 }
-.producImg{
-padding: 5rem;
+
+.producImg {
+    padding: 5rem;
 }
-.producDescrip{
+
+.producDescrip {
     margin-top: 5rem;
-  font-family: 'Mina', sans-serif;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 150px;
-  margin-right: 9rem;
+    font-family: 'Mina', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 150px;
+    margin-right: 9rem;
 }
-.btnComprar{
+
+.btnComprar {
     width: 10rem;
     height: 3.5rem;
     background: #FFFFFF;
@@ -240,37 +251,38 @@ padding: 5rem;
     margin-top: 5rem;
 }
 
-.card-body{
+.card-body {
     font-family: 'Mina', sans-serif;
 }
+
 /* media query para la version mobile de comprar luces o dibujos */
 @media (max-width:768px) {
-    /* ajustar la pantalla  */
-    html, body {
-        min-height: 100%;
-        min-width: 100%;
-    }
-    .tituloArtPetit{
+
+
+
+    .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
     }
-    .contenedorImg{
+
+    .contenedorImg {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        align-items: center;
         margin-top: -2rem;
-        
+        padding: 2rem;
+
     }
-    .floatWpp{
+
+    .floatWpp {
         position: fixed;
         width: 60px;
         height: 60px;
         bottom: 40px;
         right: .3rem;
         top: 24rem;
-        margin-bottom:2rem ;
+        margin-bottom: 2rem;
         background-color: #00bb2d;
         color: #ffffff;
         border-radius: 50px;
@@ -278,18 +290,19 @@ padding: 5rem;
         font-size: 2.5rem;
         box-shadow: 2px 2px 3px #999;
         z-index: 100;
-        
+
     }
-    
-    .floatWpp:hover{
+
+    .floatWpp:hover {
         text-decoration: none;
         color: #00bb2d;
         background-color: #ffffff;
     }
-    .iconWpp i{
+
+    .iconWpp i {
         margin-top: -2rem;
     }
-   
+
 }
 
 
@@ -299,99 +312,112 @@ padding: 5rem;
 
 /* estilos que se muestra si el formulario se envio  */
 @media (max-width:768px) {
-     /* ajustar la pantalla  */
-   
-    .headerTop{
+    /* ajustar la pantalla  */
+
+    .headerTop {
         justify-content: center;
 
     }
-    .tituloArtPetit{
+
+    .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
     }
-    .contenedorFormulario{
+
+    .contenedorFormulario {
         display: flex;
         flex-direction: row;
         margin: 1.5rem;
         margin-bottom: 40px;
         justify-content: center;
         align-items: center;
-        background-color:#FDB022;
+        background-color: #FDB022;
         padding: 2rem;
         border-radius: 10px;
- 
+
     }
-    .botonSubmit{
+
+    .botonSubmit {
         display: flex;
         justify-content: center;
     }
 }
+
 @media (min-width:768px) {
-    .textHeader{
+    .textHeader {
         margin-left: 50rem;
         margin-top: .1rem;
     }
-    .headerTop{
+
+    .headerTop {
         display: flex;
         justify-content: center;
         overflow: auto;
     }
-    .tituloArtPetit{
+
+    .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
     }
-    .contenedorFormulario{
+
+    .contenedorFormulario {
         margin: 0 auto;
         width: 100%;
-        background-color:#FDB022;
+        background-color: #FDB022;
         border-radius: 2%;
         padding: 1rem;
         margin-bottom: 5rem;
     }
-    .botonSubmit{
+
+    .botonSubmit {
         display: flex;
         justify-content: center;
     }
 }
-.FormularioEnviado{
+
+.FormularioEnviado {
     text-align: center;
 }
-.FormularioEnviado h1{
+
+.FormularioEnviado h1 {
     margin-top: 5rem;
     font-family: 'Mina', sans-serif;
     color: #000;
     font-weight: bold;
     font-size: 2rem;
 }
-.FormularioEnviado i{
+
+.FormularioEnviado i {
     color: rgb(95, 182, 139);
     font-size: 4rem;
     font-weight: 100;
     margin: 3.5rem;
-   
+
 }
-.FormularioEnviado p{
+
+.FormularioEnviado p {
     font-family: 'Mina';
     font-size: 1.2rem;
     font-weight: 100;
-   
+
 }
+
 @media (min-width:768px) {
-    .contenedorFormulario{
+    .contenedorFormulario {
         margin: 0 auto;
         width: 80%;
-        background-color:var(--colorTerciario);
+        background-color: var(--colorTerciario);
         border-radius: 2%;
         padding: 1rem;
         margin-bottom: 5rem;
     }
-    
+
 }
 
 
-.textoLabel{
+.textoLabel {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     font-size: 1.5rem;
@@ -399,28 +425,29 @@ padding: 5rem;
     margin-bottom: 8px;
 }
 
-.botonSubmit{
-padding: 2vh 8vw;
-width: 25vw;
-margin: 0 19rem;
-background: #FFFFFF;
-border: 3px solid #C11574;
-border-radius: 10px;
-text-transform: uppercase;
-color: var(--colorTerciario);
-font-family: var(--fuentePrincipal);
-font-weight: 700;
-font-size: 1.5rem;
+.botonSubmit {
+    padding: 2vh 8vw;
+    width: 25vw;
+    margin: 0 19rem;
+    background: #FFFFFF;
+    border: 3px solid #C11574;
+    border-radius: 10px;
+    text-transform: uppercase;
+    color: var(--colorTerciario);
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    font-size: 1.5rem;
 
 }
-.botonSubmit:hover{
+
+.botonSubmit:hover {
     background-color: #FDB022;
     color: #ffffff;
     transition-duration: .8s;
 }
 
-@media (max-width: 600px){
-    .botonSubmit{
+@media (max-width: 600px) {
+    .botonSubmit {
         padding: 7px 60px;
         width: 170px;
         margin: auto;
@@ -432,185 +459,217 @@ font-size: 1.5rem;
         font-family: "Mina", sans-serif;
         font-weight: 700;
         font-size: 1rem;
-        }
+    }
 }
- 
 
-.errorDatos{
-    border: 3.5px solid  rgb(252, 103, 103) !important;
+
+.errorDatos {
+    border: 3.5px solid rgb(252, 103, 103) !important;
 }
- .datosCorrectos {
-    border: 3.5px solid  rgb(146, 223, 95) !important;
+
+.datosCorrectos {
+    border: 3.5px solid rgb(146, 223, 95) !important;
     opacity: 1;
 }
+
 /* icono del fomulario */
-.formularioInput{
+.formularioInput {
     position: relative;
-    
+
 }
-.formularioEstado , 
-.formularioEstadoEmail{
-position: absolute;
-right: 10px;
-top: 3px;
-z-index: 100;
-font-size: 20px;
-opacity: 0;
+
+.formularioEstado,
+.formularioEstadoEmail {
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    z-index: 100;
+    font-size: 20px;
+    opacity: 0;
 }
-.formularioEstadoActivo{
+
+.formularioEstadoActivo {
     display: block;
     opacity: 1;
 }
-.formularioEstadoCorreto{
-    color:rgb(146, 223, 95) ;
+
+.formularioEstadoCorreto {
+    color: rgb(146, 223, 95);
 }
-.formularioEstadoIncorrecto{
+
+.formularioEstadoIncorrecto {
     color: rgb(216, 65, 38);
 }
+
 /* estilos para que el boton cambie de color segun si el formulario esta bien o no  */
 .--incompleto {
-    background-color: #b1b0b0 !important ;
-    color: #fff!important;
-    border: none!important;
+    background-color: #b1b0b0 !important;
+    color: #fff !important;
+    border: none !important;
 }
-.--incompleto:hover{
+
+.--incompleto:hover {
     background-color: #FDB022 !important;
-    color: #fff!important;
+    color: #fff !important;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px !important;
 }
+
 /* PAGINA QUIENES SOMOS */
 @media (max-width:768px) {
-    .quienesSomos{
+
+    .quienesSomos {
         display: flex;
         flex-direction: column;
+        padding: 10px;
+
+
+    }
+
+    .tituloQuienesSomos {
         text-align: center;
     }
-    .textoQuienesSomos{
-        font-family:'Mina';
-        font-size: 1.2rem;
+
+    .textoQuienesSomos {
+        font-family: 'Mina';
+        font-size: 1rem;
         margin: 1rem;
+        text-align: start;
     }
-    
+
 }
-@media (max-width:768px) {
-    .contenedorInfo{
-        position: relative;
-      
-    }
-    .Info{
-  
+
+@media (min-width:300px) {
+
+    .contenedorInfo {
+     
+        overflow: hidden;
+        border-top: 1px solid rgba(128, 128, 128, 0.616);
        
-      display: flex;
-      justify-content: space-between;
-    gap: 2rem;
-    position: absolute;
-    top: -10px;
-    border-top: 1px solid rgba(128, 128, 128, 0.616) ;
-    padding: 2px;
-    
-       
-    }
-    .textoInformacion h5{
-    width: 100%;
-    font-size: 10px;
-    font-family: 'Mina';
-    font-weight: bold;
-    text-align: center;
    
-        
-    
     }
-    .textoInformacion img{
+
+    .Info {
+       position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+       top: 20px;
+      
+
+    }
+
+
+    .textoInformacion h5  {
+        font-size: 10px;
+        font-family: 'Mina';
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-right: 4px;
+    
+
+    }
+   
+    .textoInformacion img {
         width: 20px;
-    } 
-    
+    }
+
 }
+
 /* preguntas Frecuentes */
-@media (max-width:768px) {
-  .preguntasFrecuentes {
-      font-family: var(--fuentePrincipal);
-      font-weight: 700;
-      color: #5C5959;
-      text-decoration: none;
-      position: relative;
-    
-      
-  }
-  .preguntasFrecuentes__Contenido {
-    display: flex;
-    justify-content: space-between;
-     gap: 2rem;
-      position: absolute;
-      top: 25px;
-      font-family: var(--fuentePrincipal);
-      font-weight: 700;
-      font-size: 10px;
-      color: #5C5959;
-      text-decoration: none;
-      border-top: 1px solid rgba(128, 128, 128, 0.616) ;
-   
-  }
-  .textoFAQS{
-      font-size: 10px;
-    text-align: center;
-      padding: 5px;
-  }
-  
-    
+@media (min-width:300px) {
+    .preguntasFrecuentes {
+        font-family: var(--fuentePrincipal);
+        font-weight: 700;
+        color: #5C5959;
+        text-decoration: none;
+        position: relative;
+
+
+    }
+
+    .preguntasFrecuentes__Contenido {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        position: absolute;
+        top: 25px;
+        font-family: var(--fuentePrincipal);
+        font-weight: 700;
+        font-size: 10px;
+        color: #5C5959;
+        text-decoration: none;
+        border-top: 1px solid rgba(128, 128, 128, 0.616);
+
+    }
+
+    .textoFAQS {
+        font-size: 10px;
+        text-align: center;
+        padding: 5px;
+    }
+
+
 }
-.contenedorQuienesSomos{
+
+.contenedorQuienesSomos {
     display: flex;
     flex-direction: column;
     margin: 50px;
 }
 
-.tituloQuienesSomos{
+.tituloQuienesSomos {
     font-family: pacifico;
     color: var(--colorSecundario);
 }
 
-.textoQuienesSomos{
-    font-family:'Mina';
+.textoQuienesSomos {
+    font-family: 'Mina';
     font-weight: 400;
 }
 
 /* PAGINA LUCES: INTERIOR // EXTERIOR // OFERTAS */
 
-.titulosLuces{
+.titulosLuces {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     color: var(--colorTerciario);
     margin-top: 5vh;
     text-align: center;
 }
+
 /* media query para las luces */
 @media (max-width:768px) {
+
     /* ajustar la pantalla  */
     html, body {
         min-height: 100%;
         min-width: 100%;
     }
-    .tituloArtPetit{
+
+    .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
     }
-    .contendorLucesInterior{
+
+    .contendorLucesInterior {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
         align-items: center;
         margin: 1rem;
-        
+
     }
-    .floatWpp{
+
+    .floatWpp {
         position: fixed;
         width: 60px;
         height: 60px;
         bottom: 40px;
         right: .3rem;
         top: 24rem;
-        margin-bottom:2rem ;
+        margin-bottom: 2rem;
         background-color: #00bb2d;
         color: #ffffff;
         border-radius: 50px;
@@ -618,48 +677,54 @@ opacity: 0;
         font-size: 2.5rem;
         box-shadow: 2px 2px 3px #999;
         z-index: 100;
-        
+
     }
-    
-    .floatWpp:hover{
+
+    .floatWpp:hover {
         text-decoration: none;
         color: #00bb2d;
         background-color: #ffffff;
     }
-    .iconWpp i{
+
+    .iconWpp i {
         margin-top: -2rem;
     }
-   
+
 }
+
 /* media query para luces de exterior */
 @media (max-width:768px) {
+
     /* ajustar la pantalla  */
-     body {
+    body {
         min-height: 100%;
         min-width: 100%;
-        
+
     }
-    .tituloArtPetit{
+
+    .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
         font-weight: 900;
     }
-    .contenedorLucesExterior{
+
+    .contenedorLucesExterior {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
         align-items: center;
         margin: 1.5rem;
-        
+
     }
-    .floatWpp{
+
+    .floatWpp {
         position: fixed;
         width: 60px;
         height: 60px;
         bottom: 40px;
         right: .3rem;
         top: 24rem;
-        margin-bottom:2rem ;
+        margin-bottom: 2rem;
         background-color: #00bb2d;
         color: #ffffff;
         border-radius: 50px;
@@ -667,23 +732,26 @@ opacity: 0;
         font-size: 2.5rem;
         box-shadow: 2px 2px 3px #999;
         z-index: 100;
-        
+
     }
-    
-    .floatWpp:hover{
+
+    .floatWpp:hover {
         text-decoration: none;
         color: #00bb2d;
         background-color: #ffffff;
     }
-    .iconWpp i{
+
+    .iconWpp i {
         margin-top: -2rem;
     }
-   
+
 }
+
 @media (max-width:768px) {
     .contenidoMain {
         height: 50vh;
     }
+
     .contenidoMain__texto {
         display: flex;
         justify-content: center;
@@ -698,18 +766,18 @@ opacity: 0;
 /* PAGINA ¿COMO COMPRAR? */
 
 
-.contenedorComoComprar{
+.contenedorComoComprar {
     background: #C1157433;
     height: 100%;
 }
 
-.cartasComoComprar{
-    background-color:var(--colorSecundario);
+.cartasComoComprar {
+    background-color: var(--colorSecundario);
     color: white;
     font-family: var(--fuentePrincipal);
 }
 
-.tituloComoComprar{
+.tituloComoComprar {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     text-transform: uppercase;
@@ -720,23 +788,23 @@ opacity: 0;
 
 /* PAGINA PREGUNTAS FRECUENTES */
 
-.contenedorPreguntasFrecuentes{
+.contenedorPreguntasFrecuentes {
     margin: 60px;
 }
 
-.titPrincipalPreguntasFrecuentes{
+.titPrincipalPreguntasFrecuentes {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     color: var(--colorSecundario);
     margin: 60px;
 }
 
-.titulosPreguntasFrecuentes{
+.titulosPreguntasFrecuentes {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
 }
 
-.textoPreguntasFrecuentes{
+.textoPreguntasFrecuentes {
     font-family: var(--fuentePrincipal);
     font-weight: 400;
 }
@@ -745,24 +813,24 @@ opacity: 0;
 
 /* PAGINA IDEAS */
 @media (max-width:768px) {
-    .contenedorIdeas{
+    .contenedorIdeas {
         overflow-x: auto;
         border: 1px solid white;
         max-height: 300px;
         display: flex;
     }
-    
-    .contenedorIdeas::-webkit-scrollbar{
+
+    .contenedorIdeas::-webkit-scrollbar {
         width: 1rem;
     }
-    
-    .imgIdeas{
+
+    .imgIdeas {
         max-width: 600px;
         height: 300px;
         margin-right: 20px;
     }
-    
-    .tituloIdeasBalcon{
+
+    .tituloIdeasBalcon {
         font-family: var(--fuentePrincipal);
         font-weight: 700;
     }
@@ -772,14 +840,15 @@ opacity: 0;
 
 /* PAGINA TERMINOS Y CONDICIONES  */
 
-.tituloTerminosyCondiciones{
+.tituloTerminosyCondiciones {
     font-family: var(--fuentePrincipal);
     font-weight: 700;
     color: var(--colorSecundario);
 }
+
 /* PAGINA DE NUESTRO BLOG */
-.subtituloBlog{
+.subtituloBlog {
     text-align: center;
-    font-family:'Pacifico', cursive;
+    font-family: 'Pacifico', cursive;
     color: var(--colorSecundario);
 }
