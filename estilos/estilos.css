@@ -31,6 +31,14 @@ body {
     margin-top: -1.5rem;
 
 }
+@media(max-width:768px){
+    .textHeader {
+        display: flex;
+       align-items: flex-end;
+        margin-top: -1.5rem;
+    
+    }
+}
 
 .a-Header {
     margin-right: 5vw;
@@ -552,7 +560,7 @@ body {
        position: relative;
         display: flex;
         justify-content: space-evenly;
-        gap: 2rem;
+        gap: 3px;
        top: 20px;
       
 
@@ -571,7 +579,7 @@ body {
     }
    
     .textoInformacion img {
-        width: 20px;
+        width: 10px;
     }
 
 }
@@ -657,7 +665,6 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.5rem;
-        align-items: center;
         margin: 1rem;
 
     }
@@ -712,7 +719,6 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1rem;
-        align-items: center;
         margin: 1.5rem;
 
     }
