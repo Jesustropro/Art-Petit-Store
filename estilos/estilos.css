@@ -858,3 +858,10 @@ body {
     font-family: 'Pacifico', cursive;
     color: var(--colorSecundario);
 }
+.contenidoBlog__Titulo{
+    color: #FEC84B;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: rgba(0, 0, 0, 0.253) 0px 4px 4px ;
+}
