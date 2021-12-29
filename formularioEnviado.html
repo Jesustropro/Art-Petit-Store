@@ -29,25 +29,25 @@
 <body>
   <header>
 
-
+  
     <div class="headerTop ">
       <i id="sidebar" class="fas fa-bars sidebar"></i>
       <div class="textHeader">
         <a href="nuestroBlog.html" class="a-Header">Nuestro Blog</a>
         <a href="contactanos.html" class="a-Header ">¡Contactanos!</a>
       </div>
-
+      
     </div>
 
 
-
+   
 
     <!-- NAVS -->
-
-    <section class="contenido">
-
+  
+    <section class="contenido">    
+      
       <div class="col-xs-12 contenedorNavs">
-        <ul>
+        <ul class="lista">
           <li class="nav-item col-md-2">
             <a class="nav-link a-nav" href="comprarArte.html">Comprar Arte</a>
           </li>
@@ -55,7 +55,7 @@
             <a class="nav-link a-nav dropdown-toggle" data-bs-toggle="dropdown" href="" role="button"
               aria-expanded="false">Luminarias</a>
             <ul class="dropdown-menu">
-              <li>
+              <li >
                 <a class="dropdown-item" href="lucesInterior.html">De Interior</a>
               </li>
               <li>
@@ -79,90 +79,53 @@
       </div>
       <!-- FIN NAVS -->
 
-
+     
       <div class="contenedor-main">
-        <main>
-          <h1 class="tituloArtPetit">
-            <div>
-              <a href="index.html" class="tituloArtPetit"> ART PETIT STORE</a>
-            </div>
-
-          </h1>
-    <div class=" contenedorFormulario">
-      <form id="form" class="col-auto ">
-        <div class="form mb-3  ">
-          <label for="floatingName" class="textoLabel">Nombre</label>
-          <div class="formulario">
-            <div class="formularioInput">
-              <input id="nombre" type="text" class="form-control formularioInput " id="floatingName"
-                placeholder="Ingrese su nombre " name="nombre" />
-              <div id="nombreUser" class="formularioEstado">
-                <i id="iconoError" class=" fas fa-times"></i>
-              </div>
-            </div>
-
-
+      <main>
+        <h1 class="tituloArtPetit">
+          <div>
+            <a href="index.html" class="tituloArtPetit"> ART PETIT STORE</a>
           </div>
-
-
-        </div>
-
-        <div class="form mb-3">
-          <label for="floatingInput" class="textoLabel">Email</label>
-          <div class="formulario">
-            <div class="formularioInput">
-              <input id="email" type="email" class="form-control formularioInput  " id="floatingName"
-                placeholder="Ingrese su email" name="email" />
-              <div id="emailUser" class="formularioEstadoEmail">
-                <i id="iconoErrorEmail" class=" fas fa-times"></i>
-
-              </div>
-            </div>
-
-
-          </div>
-
-        </div>
-
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="textoLabel" class="form-label">Ingrese aqui su pedido</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" name="mensaje"></textarea>
-        </div>
-        <input type="submit" id="button" class="botonSubmit" value="Enviar" >
-      </form>
-    </div>
+    
+        </h1>
+      <div class="FormularioEnviado">
+        <h1>¡Mensaje enviado con éxito! </h1>
+        <i class="far fa-check-square"></i>
+        <p>A la brevedad nos contactaremos con usted. ¡Muchas gracias! </p>
+      </div>
+   
     </main>
+  </div>
+  
   </header>
-</section> 
-  <!-- footer -->
-  <footer class="footer">
-    <div class="row m-0">
-      <div class="contenedorLogoRedes col-7">
-        <h5 class="textoRedes">CONTACTANOS</h5>
-        <a href="#" class="icon-button pinterest"><i class="fab fa-pinterest"></i><span></span></a>
-        <a href="#" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
-        <a href="#" class="icon-button whatsapp"><i class="fab fa-whatsapp"></i><span></span></a>
-      </div>
+  </section> 
+    <footer class="footer">
+      <div class="row m-0">
+        <div class="contenedorLogoRedes col-7">
+          <h5 class="textoRedes">CONTACTANOS</h5>
+          <a href="#" class="icon-button pinterest"
+            ><i class="fab fa-pinterest"></i><span></span
+          ></a>
+          <a href="#" class="icon-button instagram"
+            ><i class="fab fa-instagram"></i><span></span
+          ></a>
+          <a href="#" class="icon-button whatsapp"
+            ><i class="fab fa-whatsapp"></i><span></span
+          ></a>
+        </div>
 
-      <div class="contenedorUbicacion col-5">
-        <br /><br />
-        <h4 class="textoUbicacion">
-          <img src="img/email.png" alt="email" /> artpetitstore@
-        </h4>
-        <br /><br />
-        <h4 class="textoUbicacion">
-          <img src="img/ubicacion.png" alt="ubicacion" />Direccion
-        </h4>
+        <div class="contenedorUbicacion col-5">
+          <br /><br />
+          <h4 class="textoUbicacion">
+            <img src="img/email.png" alt="email" /> artpetitstore@
+          </h4>
+          <br /><br />
+          <h4 class="textoUbicacion">
+            <img src="img/ubicacion.png" alt="ubicacion" />Direccion
+          </h4>
+        </div>
       </div>
-    </div>
-  </footer>
-</body>
-<script src="js/formulario.js"></script>
-<script src="js/enviarFormulario.js"></script>
-  <!-- scripts del la libreria emailJS -->
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-    emailjs.init('user_jKPDOIAED2JRFFEQR48kv')
-  </script>
-  <script src="js/sidebar.js"></script>
+    </footer>
+  </body>
+<script src="js/sidebar.js"></script>
 </html>
