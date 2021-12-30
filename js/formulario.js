@@ -83,5 +83,3 @@ if(e.target.classList[2]==='errorDatos'){
   
 }
 }
-
-
