@@ -16,6 +16,7 @@
 body {
     background-color: #E5E5E5;
     width: 100%;
+    height: 50vh;
 }
 
 /* HEADER */
@@ -151,14 +152,13 @@ body {
 /* FIN HEADER */
 
 
-/* HOME */
-
+/* HOME  y CARROUSEL */
 .carousel-caption h5 {
+   
     position: relative;
+    font-family: 'Mina';
     text-transform: uppercase;
     color: rgb(0, 0, 0);
-    bottom: 250px;
-    font-family: 'Mina';
     padding: 1rem;
     font-size: 2rem;
     font-weight: bold;
@@ -167,14 +167,41 @@ body {
 
 .carousel-caption span {
     position: relative;
-    bottom: 200px;
     color: #000;
     font-family: 'Mina';
     font-size: 2.7rem;
     text-transform: uppercase;
 
 }
+@media (max-width:768px){
+    .carousel-caption h5 {
+        font-family: 'Mina';
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        display: block;
+    }
+    .carousel-caption span {
+        color: #000;
+        font-family: 'Mina';
+        font-size: 1.3rem;
+        right: 35px;
+        text-transform: uppercase;
+      
+      
+    
+    }
+   .titulosCarrousel__terImg{
+       bottom: 60px;
+       right: 35px;
+       font-size: .8rem !important;
+   }
+}
 
+
+/* FIN contenido carrousel */
 .contenedorInfo {
     width: 100%;
 }
