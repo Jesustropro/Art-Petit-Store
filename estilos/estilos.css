@@ -17,6 +17,19 @@ body {
     background-color: #E5E5E5;
     width: 100%;
 }
+@media (max-width:768px) {
+    .contenidoTotal{
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        
+    }
+    .contenedor-main{
+       flex: 1 1 0%;
+      
+    }
+    
+}
 
 /* HEADER */
 .headerTop {
@@ -31,12 +44,13 @@ body {
     margin-top: -1.5rem;
 
 }
-@media(max-width:768px){
+
+@media(max-width:768px) {
     .textHeader {
         display: flex;
-       align-items: flex-end;
+        align-items: flex-end;
         margin-top: -1.5rem;
-    
+
     }
 }
 
@@ -85,16 +99,14 @@ body {
         position: relative;
         padding: 0 auto;
         margin: none;
-        overflow-x: hidden;
-        z-index: 0;
+        
     }
 
     .contenedorNavs {
         position: absolute;
+        top: -40px;
         margin: none;
-
         width: 12rem;
-        height: 100%;
         background-color: #FDB022;
         left: -12rem;
         transition: all 250ms linear;
@@ -153,7 +165,7 @@ body {
 
 /* HOME  y CARROUSEL */
 .carousel-caption h5 {
-   
+
     position: relative;
     font-family: 'Mina';
     text-transform: uppercase;
@@ -172,7 +184,8 @@ body {
     text-transform: uppercase;
 
 }
-@media (max-width:768px){
+
+@media (max-width:768px) {
     .carousel-caption h5 {
         font-family: 'Mina';
         text-transform: uppercase;
@@ -182,23 +195,32 @@ body {
         font-weight: bold;
         display: block;
     }
+
     .carousel-caption span {
         color: #000;
         font-family: 'Mina';
         font-size: 1.3rem;
         right: 35px;
         text-transform: uppercase;
-      
-      
-    
-    }
-   .titulosCarrousel__terImg{
-       bottom: 60px;
-       right: 35px;
-       font-size: .8rem !important;
-   }
-}
 
+
+
+    }
+
+    .titulosCarrousel__terImg {
+        bottom: 60px;
+        right: 35px;
+        font-size: .8rem !important;
+    }
+}
+@media (max-width:768px) {
+    .contenedor__Main{
+   display: flex;
+   flex-direction: column;
+   flex: 1 1 0%;
+    }
+    
+}
 
 /* FIN contenido carrousel */
 .contenedorInfo {
@@ -227,52 +249,59 @@ body {
     padding: 25px;
     text-align: center;
 }
-@media(max-width:768px){
-.contenidoFooterRedes ,
-.contenedorLogoRedes__iconos  {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 1.5rem;
-}
-.contenidoFooterRedes h5{
-    font-family: 'Mina';
-    font-weight: bold;
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin-top: 3rem;
-}
-.contenedorLogoRedes__iconos a{
-font-size: 1.2rem;
-background-color: var(--colorPrincipal);
-}
+
+@media(max-width:768px) {
+
+    .contenidoFooterRedes,
+    .contenedorLogoRedes__iconos {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1.8rem;
+    }
+
+    .contenidoFooterRedes h5 {
+        font-family: 'Mina';
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 1.2rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+    }
+
+    .contenedorLogoRedes__iconos a {
+        font-size: 1.2rem;
+        background-color: var(--colorPrincipal);
+    }
 
 
 }
+
 @media (max-width:768px) {
     .footer {
         background-color: var(--colorPrincipal);
         width: 100%;
-        height: 45vh;
-        margin-top: 1.5rem;
     }
+
     .contenedorUbicacion {
         display: flex;
-        justify-content: center;
-        gap:5rem;
-        padding: 3rem;
+        justify-content: space-evenly;
+        gap: 5rem;
     }
-    .textoUbicacion{
+
+    .textoUbicacion {
         font-family: 'Mina';
         font-weight: bold;
         text-transform: uppercase;
         font-size: 13px;
     }
+
     .textoUbicacion img {
         width: 10px;
-       
-      
+
+
     }
 }
+
 @media (min-width:768px) {
     .footer {
         background-color: var(--colorPrincipal);
@@ -280,18 +309,18 @@ background-color: var(--colorPrincipal);
         width: 100%;
         font-size: 1rem;
     }
-    
+
     .contenidoFooter {
         font-family: var(--fuentePrincipal);
         font-size: 1.5rem;
         margin: 15px;
     }
-    
+
     .textoUbicacion {
         font-family: var(--fuentePrincipal);
         font-size: 1.5rem;
     }
-    
+
 }
 
 
@@ -299,6 +328,7 @@ background-color: var(--colorPrincipal);
 /* FIN FOOTER */
 
 /* PAGINA COMPRAR ARTE */
+
 .producDatos {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -316,7 +346,28 @@ background-color: var(--colorPrincipal);
     margin-top: 150px;
     margin-right: 9rem;
 }
-
+@media (max-width:768px) {
+    .producDatos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .producImg {
+        margin:3rem;
+        padding: 0;
+      
+    }
+    
+    .producDescrip {
+        margin-top: 5rem;
+        font-family: 'Mina', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 150px;
+        margin-right: 9rem;
+    }
+    
+}
 .btnComprar {
     width: 10rem;
     height: 3.5rem;
@@ -621,35 +672,34 @@ background-color: var(--colorPrincipal);
 @media (min-width:300px) {
 
     .contenedorInfo {
-     
+
         overflow: hidden;
         border-top: 1px solid rgba(128, 128, 128, 0.616);
-       
-   
+
+
     }
 
     .Info {
-       position: relative;
+        position: relative;
         display: flex;
         justify-content: space-evenly;
-        gap: 3px;
-       top: 20px;
-      
+        gap: 25px;
+        padding: 1rem;
 
     }
 
 
-    .textoInformacion h5  {
+    .textoInformacion h5 {
         font-size: 10px;
         font-family: 'Mina';
         font-weight: bold;
         text-align: center;
         margin-bottom: 20px;
         margin-right: 4px;
-    
+
 
     }
-   
+
     .textoInformacion img {
         width: 10px;
     }
@@ -672,7 +722,6 @@ background-color: var(--colorPrincipal);
         display: flex;
         justify-content: space-between;
         gap: 2rem;
-        position: absolute;
         top: 25px;
         font-family: var(--fuentePrincipal);
         font-weight: 700;
@@ -685,6 +734,7 @@ background-color: var(--colorPrincipal);
 
     .textoFAQS {
         font-size: 10px;
+        font-family: 'Mina';
         text-align: center;
         padding: 5px;
     }
@@ -725,6 +775,7 @@ background-color: var(--colorPrincipal);
     html, body {
         min-height: 100%;
         min-width: 100%;
+        overflow-x: hidden;
     }
 
     .tituloArtPetit {
@@ -773,14 +824,6 @@ background-color: var(--colorPrincipal);
 
 /* media query para luces de exterior */
 @media (max-width:768px) {
-
-    /* ajustar la pantalla  */
-    body {
-        min-height: 100%;
-        min-width: 100%;
-
-    }
-
     .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
@@ -930,10 +973,11 @@ background-color: var(--colorPrincipal);
     font-family: 'Pacifico', cursive;
     color: var(--colorSecundario);
 }
-.contenidoBlog__Titulo{
+
+.contenidoBlog__Titulo {
     color: #FEC84B;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
-    text-shadow: rgba(0, 0, 0, 0.253) 0px 4px 4px ;
+    text-shadow: rgba(0, 0, 0, 0.253) 0px 4px 4px;
 }
