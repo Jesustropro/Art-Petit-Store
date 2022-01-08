@@ -1,129 +1,419 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos/estilos.css">
-    <link rel="stylesheet" href="estilos/estilologosredes.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
-    <title>Terminos y Condiciones</title>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- links css a estilos y fuentes  -->
+  <link rel="preload" href="estilos/normalize.css" as="style" />
+  <link rel="stylesheet" href="estilos/estilos.css" />
+  <link rel="stylesheet" href="estilos/estilologosredes.css" />
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100&family=Mina:wght@700&family=Pacifico&display=swap"
+    rel="stylesheet" />
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+  <title>Art Petit Store</title>
 </head>
+
 <body>
 
+  <body>
 
-    <div class="headerTop ">
-        <i id="sidebar" class="fas fa-bars sidebar"></i>
-        <div class="textHeader">
-          <a href="nuestroBlog.html" class="a-Header">Nuestro Blog</a>
-          <a href="contactanos.html" class="a-Header ">¡Contactanos!</a>
+
+    <header>
+      <!-- NAVS -->
+
+      <section class="contenido">
+        <div class="headerTop">
+          <div class="sidebarContenido mobile">
+            <i id="sidebar" class="fas fa-bars sidebar "></i>
+          </div>
+          <div class="textHeader">
+            <a href="nuestroBlog.html" class="a-Header">Nuestro Blog</a>
+            <a href="contactanos.html" class="a-Header ">¡Contactanos!</a>
+          </div>
         </div>
-        
-      </div>
 
-        <h1 class="tituloArtPetit"><a href="index.html" class="tituloArtPetit"> ART PETIT STORE</a></h1>
-
-        <!-- NAVS -->
-        <div class="container-fluid row">
-            <ul class="nav nav-pills justify-content-around contenedorNavs">
-                <li class="nav-item col-md-2">
-                    <a class="nav-link a-nav" href="comprarArte.html">Comprar Arte</a>
+        <div class="col-xs-12 contenedorNavs mobile">
+          <ul>
+            <li class="nav-item col-md-2">
+              <a class="nav-link a-nav" href="comprarArte.html">Comprar Arte</a>
+            </li>
+            <li class="nav-item dropdown col-md-2">
+              <a class="nav-link a-nav dropdown-toggle" data-bs-toggle="dropdown" href="" role="button"
+                aria-expanded="false">Luminarias</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="lucesInterior.html">De Interior</a>
                 </li>
-                <li class="nav-item dropdown col-md-2">
-                    <a class="nav-link a-nav dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
-                        aria-expanded="false">Luminarias</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="lucesInterior.html">De Interior</a></li>
-                        <li><a class="dropdown-item" href="lucesExterior.html">De Exterior</a></li>
-                        <li><a class="dropdown-item" href="lucesOfertas.html">Ofertas</a></li>
-                    </ul>
+                <li>
+                  <a class="dropdown-item" href="lucesExterior.html">De Exterior</a>
                 </li>
-                <li class="nav-item col-md-2">
-                    <a class="nav-link a-nav" href="trabajosPersonalizados.html">Trabajos Personalizados</a>
+                <li>
+                  <a class="dropdown-item" href="lucesOfertas.html">Ofertas</a>
                 </li>
-                <li class="nav-item col-md-2">
-                    <a class="nav-link a-nav" href="ideas.html">Ideas</a>
-                </li>
-                <li class="nav-item col-md-2">
-                    <a class="nav-link a-nav" href="quienesSomos.html">Quienes Somos</a>
-                </li>
-            </ul>
+              </ul>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link a-nav" href="trabajosPersonalizados.html">Trabajos Personalizados</a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link a-nav" href="ideas.html">Ideas</a>
+            </li>
+            <li class="nav-item col-md-2">
+              <a class="nav-link a-nav" href="quienesSomos.html">Quienes Somos</a>
+            </li>
+          </ul>
         </div>
         <!-- FIN NAVS -->
+
+
+
+        <div class="contenedor-main">
+          <main>
+            <h1 class="tituloArtPetit">
+              <div>
+                <a href="index.html" class="tituloArtPetit"> ART PETIT STORE</a>
+              </div>
+
+            </h1>
+            <h3 class="tituloTerminosyCondiciones text-center m-5">Terminos y Condiciones</h3>
+            <p class="terminosYCondiones__Texto"> Este documento y debe ser leído atentamente antes de decidir el uso de
+              los Servicios de esta página web.
+
+              El uso y acceso al SITIO y/o los servicios se rigen por los presentes Términos y Condiciones de Uso del
+              SITIO (en adelante, los “TyC”), la Política de Privacidad (en adelante, la “POLÍTICA”) y las CONDICIONES
+              PARTICULARES (tal como son definidos más adelante en esta introducción).
+
+              ART PETIT STORE le solicita leer con atención los TyC, la POLÍTICA y las condiciones de aplicación de las
+              CONDICIONES PARTICULARES. Asimismo, ART PETIT STORE recomienda imprimir o guardar en un soporte adecuado
+              los TyC, las CONDICIONES PARTICULARES y la POLÍTICA.
+
+              Los TyC regirán todos aquellos aspectos que las CONDICIONES PARTICULARES no contemplen. En el caso de que
+              exista alguna inconsistencia y/o contradicción entre las CONDICIONES PARTICULARES y los TyC, prevalecerán
+              las CONDICIONES PARTICULARES. ART PETIT STORE se reserva el derecho de modificar los TyC así como la
+              POLÍTICA a su sola y exclusiva discreción, en cualquier momento y sin necesidad de previa notificación y/o
+              comunicación al USUARIO y sin que ello dé lugar a indemnización y/o compensación alguna a favor del
+              USUARIO. Dichos cambios tendrán vigencia a partir de la fecha que ART PETIT STORE indique y, en caso de
+              que nada sea indicado al respecto, a partir del momento mismo en que sean publicados en el SITIO. Por lo
+              tanto, ART PETIT STORE le solicita que revise los TyC y la PÓLÍTICA cada vez que acceda y/o visite el
+              SITIO.
+
+              Los contenidos del SITIO son luminarias y obras de arte y, por lo tanto, alguna de ellas podría incomodar
+              o despertar alguna susceptibilidad. Al respecto, DIDEROT.ART recuerda que existe software para son útiles
+              filtrar y bloquear contenidos. . La responsabilidad por la eficiencia y/o resultados de la aplicación y/o
+              uso de dicho software es exclusiva de sus proveedores, fabricantes y/o desarrolladores.
+
+              1. FUNCIONAMIENTO DEL SITIO
+              1.1. El SITIO está destinado a la exhibición y difusión de luminarias y obras de arte originales que
+              previamente sean seleccionadas por ART PETIT STORE (en adelante, las OBRAS) que ofrezcan sus respectivos
+              autores y/o titulares de propiedad intelectual (en adelante, los ARTISTAS) la difusión de los antecedentes
+              profesionales y biográficos de los ARTISTAS (en adelante, el “PERFIL”) y la compra de las OBRAS por cuenta
+              y orden de los USUARIOS que así lo soliciten.
+
+              1.2. EL SITIO incluirá la descripción de las OBRAS, informará su precio y condiciones de pago y publicará
+              los PERFILES correspondientes a los ARTISTAS que tengan OBRAS ofrecidas a través del SITIO (en adelante,
+              los CONTENIDOS).
+
+              1.3. El SITIO permite: i) coordinar la forma de envío y de entrega de las OBRAS en los días y horarios que
+              indique el USUARIO; ii) realizar el pago de las OBRAS adquiridas por el USUARIO; iii) la atención y
+              respuesta de consultas de los USUARIOS y/o visitantes del SITIO.
+
+              1.4. El SITIO funciona tal cual es, con todos sus fallos y según su disponibilidad, por lo que ART PETIT
+              STORE no otorga garantía de ningún tipo y es el USUARIO quien utiliza el SITIO bajo su propio riesgo.
+
+              1.5. ART PETIT STORE tiene la facultad y el derecho de seleccionar, rechazar, remover, modificar,
+              interrumpir, suspender, cancelar y/o terminar el acceso o disponibilidad del SITIO así como las eventuales
+              funciones interactivas, aplicaciones, utilidades y servicios (en adelante, los SERVICIOS) y/o los
+              contenidos que ART PETIT STORE ponga a disposición del USUARIO mediante el SITIO y/o la forma y/o
+              condiciones en la que éstos son prestados, accedidos, presentados y/o localizados en el SITIO por razones
+              técnicas, legales, apliación de los TyC, las CONDICIONES PARTICULARES y/o la POLÍTICA o de oportunidad y
+              conveniencia sin necesidad de notificación previa y sin que ello genere compensación alguna a favor del
+              USUARIO.
+              2. OPERACIONES A TRAVÉS DEL SITIO
+              2.1 ART PETIT STORE publicará cada OBRA individualmente, identificando el ARTISTA que la creó, su precio,
+              las condiciones de venta, entrega y disponibilidad de la OBRA, vigencia de la oferta y toda otra
+              información que ART PETIT STORE considere relevante para el USUARIO (en adelante, la PUBLICACIÓN).
+
+              2.2 El USUARIO asume la obligación de abonar la compra de la OBRA O LUMINARIA en los términos y
+              condiciones establecidos en la PUBLICACIÓN respectiva. Si el pago no se realiza dentro los plazos y en los
+              términos y condiciones establecidas en la PUBLICACIÓN, ART PETIT STORE podrá declarar unilateralmente la
+              rescisión de la compraventa del producto. En tal caso, ART PETIT STORE notificará al USUARIO dicha
+              decisión mediante correo electrónico que se enviará a la dirección informada por el USUARIO en el proceso
+              de registro, cancelará la entrega del producto y podrá volver a ofrecerlo a través del SITIO. .
+
+              2.3 El pago se realizará en efectivo, mediante las tarjetas con las cuales ART PETIT STORE suscriba los
+              respectivos convenios o a través de MercadoPago.
+
+              2.4 Una vez validado el pago, ART PETIT STORE enviará un correo al USUARIO confirmando la operación de
+              compra e informando los detalles de la entrega del producto. Asi mismo, ART PETIT STORE enviará en forma
+              electrónica el comprobante respaldatorio de la operación, incluyendo los cargos indicados en el punto 2.2.
+
+              2.5 El USUARIO indicará la dirección de entrega del producto y el nombre completo y número de documento
+              nacional de identidad de las personas que estarán autorizadas para recibirla.
+
+              2.6 ART PETIT STORE enviará la factura a la dirección que haya indicado el USUARIO durante el proceso de
+              compra. Los gastos de envío serán a cargo del USUARIO.
+
+              2.7 ART PETIT STORE informará al USUARIO los datos del servicio de transporte o correo que entregará el
+              producto. La fecha de entrega del producto dependerá de la disponibilidad del servicio de transporte y/o
+              entrega.
+
+              2.8 En el caso que el ARTISTA no haga entrega de la OBRA en las condiciones descriptas en la PUBLICACIÓN,
+              o no la tenga disponible en tiempo y forma, ART PETIT STORE informara al USUARIO de tal circunstancia y
+              reintegrará el importe sin que el USUARIO tenga derecho a otra indemnización o compensación. El reintegro
+              del importe tendrá lugar dentro de los 15 días hábiles de comunicada la cancelación de la operación de
+              compra.
+
+              3. USOS DEL SITIO Y LOS CONTENIDOS POR PARTE DEL USUARIO
+
+              3.1 El USUARIO tiene expresamente prohibida la reproducción, descarga, copia, distribución, transferencia,
+              transmisión, comunicación pública, modificación, decompilación, almacenamiento, explotación y/o uso, sea
+              en forma total o parcial, por cualquier procedimiento digital, electrónico, mecánico o de cualquier otro
+              tipo conocido o por conocerse de los SERVICIOS y/o los CONTENIDOS, a menos que exista una autorización
+              expresa de ART PETIT STORE y/o CONDICIONES PARTICULARES que así lo autoricen.
+
+              3.2 El USUARIO se compromete a utilizar el SITIO, los CONTENIDOS y/o los SERVICIOS y conforme a los
+              términos y condiciones establecidas en los TyC, las CONDICIONES PARTICULARES y la PÓLÍTICA y la normativa
+              nacional, provincial y municipal aplicables.
+
+              3.3 El USUARIO no realizará ni promoverá cualquiera de las siguientes acciones y/o conductas en o a través
+              del SITIO: i) actividades ilícitas; ii) difusión, publicación, distribución y/o divulgación de contenidos,
+              mensajes, información y/o propaganda ilegales, tales como aquellos que tengan contenidos o connotaciones
+              racistas, xenófobas, discriminatorias por cuestiones de raza, religión, preferencias o tendencias sexuales
+              u opiniones políticas, de apología de delitos, terrorismo, atentatorios contra los derechos humanos,
+              pornográficos, obscenos, afecten los derechos y/o la identidad de menores y/o difamatorios, así como
+              tampoco difamar, insultar, acosar, acechar, amenazar o infringir de cualquier otra forma los derechos de
+              terceros o la moral y las buenas costumbres; iii) alterar, modificar, interferir o interrumpir y/o dañar
+              el SITIO, los CONTENIDOS, los SERVICIOS, los equipos de computación, programas de computación y/o equipos
+              y/o sistemas de telecomunicaciones y/o distribución de datos, sean de ART PETIT STORE, sus USUARIOS y/o de
+              sus proveedores en cualquier forma y/o por cualquier medio y, en general, a realizar cualquier conducta
+              que afecte o dañe los intereses de ART PETIT STORE y/o de los USUARIOS en modo alguno; iv) introducir o
+              difundir virus informáticos, troyanos, bugs, spyware, malware y/o cualquier tipo de archivo, programa y/o
+              dato que sean susceptibles de provocar daños de cualquier tipo y/o en cualquier bien y/o propiedad en el
+              SITIO y/o los CONTENIDOS; v) utilizar o lanzar cualquier sistema automatizado, incluyendo, sin limitar,
+              robots, "arañas", "lectores fuera de línea" o cualquier otro sistema para acceder al SITIO, los CONTENIDOS
+              y/o los SERVICIOS de forma tal que generen un tráfico con el o los servidores de ART PETIT STORE que
+              exceda el que un usuario podría razonablemente producir en condiciones normales y habituales de uso y
+              navegación del SITIO; vi) Recolectar u obtener del SITIO información personal identificable de otros
+              usurarios o utilizar los sistemas de comunicación disponibles en el SITIO para contactar a otros usuarios
+              con fines comerciales, excepto en aquello que eventualmente sea expresamente autorizado por ART PETIT
+              STORE; vii) Acceder al SITIO, los CONTENIDOS y/o los SERVICIOS usando tecnologías y/o medios distintos a
+              los utilizados y/o autorizados por ART PETIT STORE; viii) CONDICIONES PARTICULARES.
+
+              3.4 El USUARIO será responsable de conocer la tecnología que está utilizando para acceder al SITIO.
+
+              3.5 El USUARIO acepta que ART PETIT STORE descargue y/o instale programas de computación desde el SITIO
+              y/o los SERVICIOS, a fin de mejorar, optimizar y/o desarrollar el uso y/o acceso al SITIO, los SERIVICIOS
+              y/o los CONTENIDOS.
+
+              3.6 El USUARIO acepta participar de las promociones, competencias, concursos y consignas (en adelante las
+              “Promociones”) que sean organizadas en el SITIO por ART PETIT STORE y/o terceros anunciantes. El USUARIO
+              comprende y acepta que dicha participación quedará sujeta a los TyC y a las CONDICIONES PARTICULARES que
+              eventualmente se establezcan para cada Promoción (TyC Particulares) y, por lo tanto, que los TyC y las
+              CONDICIONES PARTICULARES deberán ser consultadas y aceptadas antes de decidir la participación en una
+              Promoción
+              4. ENLACES DEL SITIO DESDE Y HACIA SITIOS DE TERCEROS
+              4.1 El SITIO puede contener vínculos o links desde o hacia a sitios de Internet que son de propiedad o
+              están bajo el control de terceros y que son ajenos a ART PETIT STORE (en adelante, los SITIOS DE
+              TERCEROS). La existencia de estos vínculos o links en el SITIO no implica que ART PETIT STORE sugiera y/o
+              recomiende el uso o acceso a los SITIOS DE TERCEROS o que exista asociación alguna entre ART PETIT STORE y
+              los SITIOS DE TERCEROS. El USUARIO acepta y comprende que ART PETIT STORE no tiene control alguno sobre
+              los SITIOS DE TERCEROS ni sus contenidos y, en consecuencia, ART PETIT STORE no otorga garantía y/o
+              representación ni asume responsabilidad alguna por el contenido, servicios, términos y condiciones de uso,
+              políticas de privacidad y/o prácticas de los SITIOS DE TERCEROS conforme lo indicado en la Cláusula 5.3.
+
+              4.2 Conforme lo expuesto en la Cláusula 4.1 precedente, ART PETIT STORE no garantiza, recomienda,
+              patrocina ni asume responsabilidad alguna por los productos y/o servicios promocionados u ofrecidos en o a
+              través de los SITIOS DE TERCEROS.
+
+              5. LIMITACIONES A LA RESPONSABILIDAD DE DIDEROT ARTE
+              5.1 El USUARIO comprende y acepta las características y los riesgos propios de la conexión y navegación
+              por Internet. Por lo tanto, ART PETIT STORE no será responsable por fallas, interrupciones y/o caídas de
+              la red y/o de los servicios de conexión y/o transmisión de datos, o que el acceso al SITIO, los SERVICIOS
+              y/o los CONTENIDOS en forma ininterrumpida, precisa o sin errores y/o nderá por los DAÑOS que
+              eventualmente el USUARIO pueda llegar a sufrir por dichas circunstancias.
+
+              5.2 ART PETIT STORE se reserva el derecho a modificar los programas de computación, aplicaciones y/o
+              sistemas operativos que utiliza, la sistematización y/o la presentación general así como las
+              características y/o condiciones de acceso y/o uso del SITIO, los CONTENIDOS, y/o los SERVICIOS.
+              Igualmente, ART PETIT STORE se reserva el derecho de modificar, interrumpir, suspender y/o cancelar en
+              forma temporaria, definitiva, parcial y/o total las características, alcances, datos, uso, disponibilidad
+              y/o acceso al SITIO, los CONTENIDOS y/o los SERVICIOS por razones técnicas, comerciales, actualización,
+              mantenimiento, contractuales y/o de conveniencia sin necesidad de justificación ni notificación previa, y
+              que tales circunstancias no darán derecho a compensación o indemnización alguna a favor del USUARIO.
+
+              5.3 ART PETIT STORE no será responsable por los daños y perjuicios –cualquiera sea su naturaleza o
+              extensión- que eventualmente sufra el USUARIO derivado de la conexión, acceso, visita y/o uso a los SITIOS
+              DE TERCEROS y/o los contenidos y/o servicios prestados a través de los mismos.
+
+              5.4 El Usuario acepta y reconoce que ART PETIT STORE no ofrece garantía alguna ni será responsable por la
+              calidad, precio, condiciones de venta ni por las consecuencias que deriven del uso de productos o
+              servicios ofrecidos, promocionados o anunciados por terceros en el SITIO.
+
+
+              6. POLÍTICA SOBRE DERECHOS DE PROPIEDAD INTELECTUAL E INDUSTRIAL
+              6.1 ART PETIT STORE mantiene una política clara en relación a la protección y defensa de derechos de
+              propiedad intelectual tanto propios como de terceros.
+
+              6.2 Sin perjuicio de lo dispuesto en el párrafo 6.1 precedente, ART PETIT STORE pone a disposición de
+              cualquier titular de DERECHOS que pudiera considerar que el SITIO, los SERVICIOS y/o los CONTENIDOS
+              pudieran afectar, infringir y/o vulnerar algún DERECHO (en adelante, el RECLAMANTE) podrá presentar su
+              reclamo.
+              6.3 El RECLAMANTE que utiliza el mecanismo de reclamo establecido en la presente Cláusula renuncia a todo
+              reclamo y/o acción contra ART PETIT STORE derivada de la eventual responsabilidad por cualquier daño que
+              pudiera tener origen o causa en el CONTENIDO o SERVICIO objetado.
+              6.1 POLITICAS DE PRIVACIDAD.
+              Para utilizar los servicios ofrecidos por ART PETIT STORE en el Sitio, los Usuarios deberán facilitar
+              determinados datos de carácter personal, que se procesa y almacena en servidores o medios magnéticos que
+              mantienen altos estándares de seguridad y protección tanto física como tecnológica.
+
+              Los Datos Personales serán tratados con la finalidad de gestionar las solicitudes de los Usuarios, brindar
+              información relacionada con los contenidos, productos y/o servicios que se gestionan en el Sitio,
+              comunicar en caso de los ganadores de concursos que se pudieran llegar a realizar o remitirte publicidad
+              personalizada, siempre que así lo haya deseado. El Usuario acepta que parte de los Datos serán facilitados
+              a aquellos encargados del tratamiento necesarios para poder gestionar pedidos y la información promocional
+              deseada, como los encargados de realizar las acciones promocionales o las entidades bancarias que tramitan
+              los pagos realizados.Además, para mejorar los servicios que se ofrecen a través del Sitio y adaptar las
+              ofertas que se realicen a través del Sitio, los datos anónimos relativos a preferencias pueden ser
+              utilizados con fines de análisis, generación de perfiles de uso, estudios de marketing y para mejorar su
+              interacción con nuestra web.
+
+              Los Usuarios podrán ejercitar los derechos de acceso, modificación, rectificación, y supresiónde sus Datos
+              Personales de conformidad a lo dispuesto a la normativa aplicable, comunicándose al correo o domicilio
+              constituido por ART PETIT STORE . Los Usuarios garantizan y responden, en cualquier caso, de la veracidad,
+              exactitud, vigencia y autenticidad de la información personal facilitada, y se comprometen a mantenerla
+              debidamente actualizada.
+
+              LA AGENCIA DE ACCESO A LA INFORMACIÓN PÚBLICA, en su carácter de Órgano de Control de la Ley N° 25.326,
+              tiene la atribución de atender las denuncias y reclamos que interpongan quienes resulten afectados en sus
+              derechos por incumplimiento de las normas vigentes en materia de protección de datos personales.
+
+              En caso que el Usuario ingrese a publicaciones de ART PETIT STORE mediante aplicaciones como Facebook,
+              Twitter, RSS, debe recordar que la información personal que envíe el Usuario a través de las mismas será
+              pública y se encontrará a disposición de terceros que pueden llegar a usar tus datos de forma no deseada.
+              Por ello, el Usuario no debe publicar Datos Personales a través de tales aplicaciones. ART PETIT STORE no
+              se hace responsable de la información personal ni de los contenidos que decidas divulgar en estos
+              espacios.
+
+              7. INCUMPLIMIENTO Y/O VIOLACIÓN DE LOS TyC
+              ART PETIT STORE se reserva el derecho de iniciar todas las acciones legales que por derecho correspondan
+              contra todo USUARIO que incumpla o vulnere los TyC, la PÓLÍTICA y/o las CONDICIONES PARTICULARES y de
+              adoptar las medidas preliminares que entienda necesarias para remediar la situación (incluyendo, pero no
+              limitado a la suspensión o cancelación del registro del USUARIO para operar en el SITIO). .
+              8. MISCELÁNEAS
+              8.1 Los TyC constituyen el único acuerdo entre el USUARIO y ART PETIT STORE y gobiernan el uso del SITIO,
+              los SERVICIOS y/o los CONTENIDOS, reemplazando cualquier contrato y/o acuerdo previo entre el USUARIO y
+              ART PETIT STORE.
+
+              8.2 Las notificaciones y/ o comunicaciones al Usuario serán consideradas como válidamente cursadas cuando
+              se dirija a una dirección, ya sea física o virtual que haya sido suministrada por el USUARIO a ART PETIT
+              STORE.
+
+              9. LEGISLACIÓN APLICABLE Y JURISDICCIÓN
+              9.1 Los TyC así como la relación entre el Usuario y ART PETIT STORE serán interpretados y estarán regidos
+              por las leyes de la República Argentina.
+
+              9.2 El Usuario acepta y acuerda el uso del SITIO, los SERVICIOS y/o los CONTENIDOS está prohibido en todas
+              aquellas jurisdicciones que no reconozcan la validez de los TyC o que sometan a ART PETIT STORE a una
+              jurisdicción distinta a la pactada en la presente Cláusula.
+
+              9.3 El uso y/o acceso del SITIO no establecerá una relación del tipo de consumo.entre el USUARIO y ART
+              PETIT STORE.
+            </p>
+
+            <!-- Envio,Financiacion,Asesoramiento -->
+            <div class="contenedorInfo">
+              <div class="Info ">
+                <div class="textoInformacion">
+                  <h5>ENVIOS A DOMICILIO
+                    <img src="img/entrega.png" alt="entregaDomicilio" />
+                  </h5>
+
+                </div>
+                <div class="textoInformacion">
+                  <h5>FINANCIACIÓN
+                    <img src="img/tarjetas.png" alt="entregaDomicilio" />
+                  </h5>
+
+                </div>
+                <div class="textoInformacion">
+                  <h5>ASESORAMIENTO
+                    <img src="img/dialogo.png" alt="entregaDomicilio" />
+                  </h5>
+
+                </div>
+              </div>
+            </div>
+
+            <!-- FIN de Envio,Financiacion,Asesoramiento   -->
+            <div class="preguntasFrecuentes">
+              <div class="preguntasFrecuentes__Contenido">
+                <a class=" textoFAQS" href="preguntasFrecuentes.html">
+                  <div class="textoFAQS__contenido">
+                    <p>PREGUNTAS FRECUENTES</p>
+                  </div>
+                </a>
+                <a class=" textoFAQS" href="comoComprar.html">
+                  <div class="textoFAQS__contenido">
+                    <p>COMO COMPRAR</p>
+                  </div>
+                </a>
+                <a class=" textoFAQS" href="terminosycondiciones.html">
+                  <div class="textoFAQS__contenido">
+                    <p>TERMINOS Y CONDICIONES</p>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+
+        </div>
+        </main>
+
     </header>
-
-
-
-
-
-
-
-
-    <main>
-        <h3 class="tituloTerminosyCondiciones text-center m-5">Terminos y Condiciones</h3>
-
-
-            <br>
-         <hr>
-         <br>
-         <div class="contenedorInfo row text-center">
-             <a class="col-4 textoFAQS" href="preguntasFrecuentes.html">
-                 <h5 class="textoFAQS">PREGUNTAS FRECUENTES</h5>
-             </a>
-             <a class="col-4 textoFAQS" href="comoComprar.html">
-                 <h5 class="textoFAQS">¿COMO COMPRAR?</h5>
-             </a>
-             <a class="col-4 textoFAQS" href="terminosycondiciones.html">
-                 <h5 class="textoFAQS">TERMINOS Y CONDICIONES</h5>
-             </a>
-         </div>
-         <br>
-         <br>
-         <br>
-
+    </section>
 
     </main>
+    </div>
 
-
-
-
-
-
-
-
-
+    </header>
+    </section>
     <footer class="footer">
-        <div class="contenidoFooter">
-          <div class="contenidoFooterRedes">
-            <div class="contenedorLogoRedes__texto">
-              <h5 class="textoRedes">CONTACTANOS</h5>
-            </div>
-            <div class="contenedorLogoRedes__iconos">
-              <a href="#" class="icon-button pinterest"><i class="fab fa-pinterest"></i><span></span></a>
-              <a href="#" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
-              <a href="https://api.whatsapp.com/send?phone=5491150622993&text=Hola%21%20Pedido" class="icon-button whatsapp"><i class="fab fa-whatsapp"></i><span></span></a>
-            </div>
-          </div>
-      
-          <div class="contenedorUbicacion ">
-            <h4 class="textoUbicacion">
-              <img src="img/email.png" alt="email" /> artpetitstore@
-            </h4>
-            <h4 class="textoUbicacion">
-              <img src="img/ubicacion.png" alt="ubicacion" />Direccion
-            </h4>
+      <div class="contenidoFooter">
+        <div class="contenidoFooterRedes">
+          <div class="contenedorLogoRedes__texto">
+            <h5 class="textoRedes">CONTACTANOS</h5>
+            <a href="#" class="icon-button pinterest"><i class="fab fa-pinterest"></i><span></span></a>
+            <a href="#" class="icon-button whatsapp"><i class="fab fa-whatsapp"></i><span></span></a>
+            <a href="#" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
           </div>
         </div>
-      
-      </footer>
 
+        <div class="contenedorUbicacion ">
+          <h4 class="textoUbicacion">
+            <img src="img/email.png" alt="email" /> artpetitstore@
+          </h4>
+          <h4 class="textoUbicacion">
+            <img src="img/ubicacion.png" alt="ubicacion" />Direccion
+          </h4>
+        </div>
+      </div>
 
+    </footer>
+  </body>
+  </div>
+  <script src="js/sidebar.js"></script>
 
-
-
-</body>
 </html>
