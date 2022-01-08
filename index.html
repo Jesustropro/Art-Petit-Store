@@ -27,58 +27,99 @@
 </head>
   <body>
 
-    <header>
+<body>
 
 
-      <div class="headerTop ">
-        <div class="sidebarContenido">
-          <i id="sidebar" class="fas fa-bars sidebar"></i>
+  <header>
+    <!-- NAVS -->
+ 
+    <section class="contenido">    
+      <div class="headerTop">
+        <div class="sidebarContenido mobile">
+          <i id="sidebar" class="fas fa-bars sidebar "></i>
         </div>
-
         <div class="textHeader">
           <a href="nuestroBlog.html" class="a-Header">Nuestro Blog</a>
           <a href="contactanos.html" class="a-Header ">¡Contactanos!</a>
         </div>
-
       </div>
 
+      <div class="col-xs-12 contenedorNavs mobile">
+        <ul >
+          <li class="nav-item col-md-2">
+            <a class="nav-link a-nav" href="comprarArte.html">Comprar Arte</a>
+          </li>
+          <li class="nav-item dropdown col-md-2">
+            <a class="nav-link a-nav dropdown-toggle" data-bs-toggle="dropdown" href="" role="button"
+              aria-expanded="false">Luminarias</a>
+            <ul class="dropdown-menu">
+              <li >
+                <a class="dropdown-item" href="lucesInterior.html">De Interior</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lucesExterior.html">De Exterior</a>
+              </li>
+              <li>
+                <a class="dropdown-item" href="lucesOfertas.html">Ofertas</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item col-md-2">
+            <a class="nav-link a-nav" href="trabajosPersonalizados.html">Trabajos Personalizados</a>
+          </li>
+          <li class="nav-item col-md-2">
+            <a class="nav-link a-nav" href="ideas.html">Ideas</a>
+          </li>
+          <li class="nav-item col-md-2">
+            <a class="nav-link a-nav" href="quienesSomos.html">Quienes Somos</a>
+          </li>
+        </ul>
+      </div>
+      <!-- FIN NAVS -->
 
 
 
-      <!-- NAVS -->
+      <div class="contenedor-main">
+      <main>
+        <h1 class="tituloArtPetit">
+          <div>
+            <a href="index.html" class="tituloArtPetit"> ART PETIT STORE</a>
+          </div>
+        </h1>
 
-      <section class="contenido">
-
-        <div class="col-xs-12 contenedorNavs">
-          <ul>
-            <li class="nav-item col-md-2">
-              <a class="nav-link a-nav" href="comprarArte.html">Comprar Arte</a>
-            </li>
-            <li class="nav-item dropdown col-md-2">
-              <a class="nav-link a-nav dropdown-toggle" data-bs-toggle="dropdown" href="" role="button"
-                aria-expanded="false">Luminarias</a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="lucesInterior.html">De Interior</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="lucesExterior.html">De Exterior</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="lucesOfertas.html">Ofertas</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item col-md-2">
-              <a class="nav-link a-nav" href="trabajosPersonalizados.html">Trabajos Personalizados</a>
-            </li>
-            <li class="nav-item col-md-2">
-              <a class="nav-link a-nav" href="ideas.html">Ideas</a>
-            </li>
-            <li class="nav-item col-md-2">
-              <a class="nav-link a-nav" href="quienesSomos.html">Quienes Somos</a>
-            </li>
+      <!-- Navs de pc -->
+      <div class="pc navPcContainer">
+      <ul class="nav justify-content-center">
+        <li>
+          <a class="navPc" aria-current="page" href="comprarArte.html">COMPRAR ARTE</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="navPc dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">LUMINARIAS</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item dropdownPc" href="lucesInterior.html">De interior</a></li>
+            <li><a class="dropdown-item dropdownPc" href="lucesExterior.html">De exterior</a></li>
+            <li><a class="dropdown-item dropdownPc" href="lucesOfertas.html">Ofertas</a></li>
           </ul>
+        </li>
+        <li>
+          <a class="navPc" href="trabajosPersonalizados.html">TRABAJOS PERSONALIZADOS</a>
+        </li>
+        <li>
+          <a class="navPc" href="ideas.html">IDEAS</a>
+        </li>
+        <li>
+          <a class="navPc" href="quienesSomos.html">QUIENES SOMOS</a>
+        </li>
+      </ul>
+    </div>
+
+      <!-- CARROUSEL -->
+      <div id="carouselExample" class="carousel carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         <!-- FIN NAVS -->
 

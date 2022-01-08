@@ -35,25 +35,21 @@ body {
 .headerTop {
     background-color: var(--colorPrincipal);
     width: 100%;
-    height: 50px;
 }
 
 .textHeader {
-    display: flex;
+    
     justify-content: end;
     margin-top: -1.5rem;
 
 }
-
-@media(max-width:768px) {
+@media(max-width:975px){
     .textHeader {
-        display: flex;
-        align-items: flex-end;
-        margin-top: -1.5rem;
-
+       display: flex;
+       align-items: flex-end;
+       margin-top: -1.5rem;
     }
 }
-
 .a-Header {
     margin-right: 5vw;
     line-height: 52px;
@@ -74,7 +70,6 @@ body {
     font-size: 2.1rem;
     line-height: 63px;
     color: var(--colorSecundario);
-    margin-left: 4vw;
     margin-top: 5vh;
     margin-bottom: 5vh;
     text-decoration: none;
@@ -83,7 +78,6 @@ body {
 .tituloArtPetit:hover {
     color: var(--colorSecundario);
 }
-
 .contenedorNavs {
     font-family: var(--fuentePrincipal);
     font-size: 1rem;
@@ -93,7 +87,7 @@ body {
     justify-content: center;
 }
 
-@media (max-width:768px) {
+@media (max-width:975px) {
 
     .contenido {
         position: relative;
@@ -148,6 +142,27 @@ body {
 
 }
 
+.navPcContainer {
+    margin-bottom: 2.5%;
+}
+
+.navPc {
+    color: black;
+    margin-left: 3vh;
+    margin-right: 3vh;
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navPc:hover {
+    color: #FDB022;
+}
+
+.dropdownPc:hover{
+    background-color: #FEC84B!important;
+}
+
 .dropdown-menu.show {
     background-color: #FEC84B;
     font-family: 'Mina';
@@ -159,7 +174,17 @@ body {
     color: #C11574 !important;
 }
 
-
+@media (max-width: 975px) {
+    .pc {
+      display: none;
+    }
+  }
+  
+@media (min-width: 976px) {
+    .mobile {
+      display: none;
+    }
+  }
 /* FIN HEADER */
 
 
@@ -363,30 +388,9 @@ body {
 .card-body {
     font-family: 'Mina', sans-serif;
 }
-@media (max-width:768px) {
-    .producDatos {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    
-    .producImg {
-        margin:3rem;
-        padding: 0;
-      
-    }
-    
-    .producDescrip {
-        font-family: 'Mina', sans-serif;
-        text-transform: uppercase;
-        margin: 0;
-    }
-    .producDescrip p{
-        padding: 5px;
-    }
-    .btnComprar{
-        margin-top: 1rem;
-    }
-}
+
+/* media query para la version mobile de comprar luces o dibujos */
+@media (max-width:975px) {
 
 
 /* media query para la version mobile de comprar luces o dibujos */
@@ -442,7 +446,7 @@ body {
 
 
 /* estilos que se muestra si el formulario se envio  */
-@media (max-width:768px) {
+@media (max-width:975px) {
     /* ajustar la pantalla  */
 
     .headerTop {
@@ -475,21 +479,23 @@ body {
     }
 }
 
-@media (min-width:768px) {
+@media (min-width:976px) {
     .textHeader {
-        margin-left: 50rem;
-        margin-top: .1rem;
+        margin-left: 62%;
+        margin-top: 0.1rem;
+        display: flex;
+        font-size: 1.3rem;
     }
 
     .headerTop {
-        display: flex;
         justify-content: center;
         overflow: auto;
     }
 
     .tituloArtPetit {
-        text-align: center;
-        font-size: 1.5rem;
+        text-align: left;
+        margin-left: 4vh;
+        font-size: 1.8rem;
         font-weight: 900;
     }
 
@@ -535,7 +541,7 @@ body {
 
 }
 
-@media (min-width:768px) {
+@media (min-width:976px) {
     .contenedorFormulario {
         margin: 0 auto;
         width: 80%;
@@ -646,7 +652,7 @@ body {
 }
 
 /* PAGINA QUIENES SOMOS */
-@media (max-width:768px) {
+@media (max-width:975px) {
 
     .quienesSomos {
         display: flex;
@@ -769,7 +775,7 @@ body {
 }
 
 /* media query para las luces */
-@media (max-width:768px) {
+@media (max-width:975px) {
 
     /* ajustar la pantalla  */
     html, body {
@@ -823,7 +829,15 @@ body {
 }
 
 /* media query para luces de exterior */
-@media (max-width:768px) {
+@media (max-width:975px) {
+
+    /* ajustar la pantalla  */
+    body {
+        min-height: 100%;
+        min-width: 100%;
+
+    }
+
     .tituloArtPetit {
         text-align: center;
         font-size: 1.5rem;
@@ -868,7 +882,7 @@ body {
 
 }
 
-@media (max-width:768px) {
+@media (max-width:975px) {
     .contenidoMain {
         height: 50vh;
     }
@@ -933,7 +947,7 @@ body {
 
 
 /* PAGINA IDEAS */
-@media (max-width:768px) {
+@media (max-width:975px) {
     .contenedorIdeas {
         overflow-x: auto;
         border: 1px solid white;
@@ -973,11 +987,13 @@ body {
     font-family: 'Pacifico', cursive;
     color: var(--colorSecundario);
 }
-
-.contenidoBlog__Titulo {
+.contenidoBlog__Titulo{
     color: #FEC84B;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
     text-shadow: rgba(0, 0, 0, 0.253) 0px 4px 4px;
 }
+    
+}
+
