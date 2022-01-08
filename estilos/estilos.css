@@ -38,9 +38,9 @@ body {
 }
 
 .textHeader {
-    
+    display: flex;
     justify-content: end;
-    margin-top: -1.5rem;
+
 
 }
 @media(max-width:975px){
@@ -153,6 +153,8 @@ body {
     font-size: 1.2rem;
     text-decoration: none;
     font-weight: bold;
+    font-family: 'Mina';
+    gap: 1.5rem;
 }
 
 .navPc:hover {
