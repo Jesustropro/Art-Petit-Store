@@ -164,6 +164,8 @@ body {
 
 
 /* HOME  y CARROUSEL */
+
+
 .carousel-caption h5 {
 
     position: relative;
@@ -206,11 +208,20 @@ body {
 
 
     }
+    .titulosCarrousel{
+        bottom: 20px;
+    }
 
     .titulosCarrousel__terImg {
-        bottom: 60px;
+        bottom: 100px;
         right: 35px;
         font-size: .8rem !important;
+    }
+    .titulosCarrousel{
+    }
+    .carousel img{
+        height: 50vh;
+        padding: 15px;
     }
 }
 @media (max-width:768px) {
